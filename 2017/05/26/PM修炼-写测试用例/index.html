@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>PM修炼--写测试用例 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="什么事情干多了，慢慢就能悟出道理了。——玛丽莲•敏  很多人估计会疑问，写测试用例不是测试人员干的活吗？别的公司我不知道哈（毕竟新鲜社会人一枚），但在本司，功能性产品测试是由PM本人完成的。我也蛮认可这种方式的，在写测试用例的过程中真的可以发现很多产品设计的漏洞（在此对开发人员说声sorry），必须改的我就直接和开发沟通修改需求文档了；不能改的只能放到版本迭代的时候啦。写测试用例真的是一个很好的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PM修炼--写测试用例">
+<meta property="og:url" content="http://yoursite.com/2017/05/26/PM修炼-写测试用例/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="什么事情干多了，慢慢就能悟出道理了。——玛丽莲•敏  很多人估计会疑问，写测试用例不是测试人员干的活吗？别的公司我不知道哈（毕竟新鲜社会人一枚），但在本司，功能性产品测试是由PM本人完成的。我也蛮认可这种方式的，在写测试用例的过程中真的可以发现很多产品设计的漏洞（在此对开发人员说声sorry），必须改的我就直接和开发沟通修改需求文档了；不能改的只能放到版本迭代的时候啦。写测试用例真的是一个很好的">
+<meta property="og:updated_time" content="2017-06-12T05:54:02.382Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PM修炼--写测试用例">
+<meta name="twitter:description" content="什么事情干多了，慢慢就能悟出道理了。——玛丽莲•敏  很多人估计会疑问，写测试用例不是测试人员干的活吗？别的公司我不知道哈（毕竟新鲜社会人一枚），但在本司，功能性产品测试是由PM本人完成的。我也蛮认可这种方式的，在写测试用例的过程中真的可以发现很多产品设计的漏洞（在此对开发人员说声sorry），必须改的我就直接和开发沟通修改需求文档了；不能改的只能放到版本迭代的时候啦。写测试用例真的是一个很好的">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-PM修炼-写测试用例" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/26/PM修炼-写测试用例/" class="article-date">
+  <time datetime="2017-05-26T12:39:02.000Z" itemprop="datePublished">2017-05-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      PM修炼--写测试用例
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>什么事情干多了，慢慢就能悟出道理了。<br>——玛丽莲•敏</p>
+</blockquote>
+<p>很多人估计会疑问，写测试用例不是测试人员干的活吗？别的公司我不知道哈（毕竟新鲜社会人一枚），但在本司，功能性产品测试是由PM本人完成的。我也蛮认可这种方式的，在写测试用例的过程中真的可以发现很多产品设计的漏洞（在此对开发人员说声sorry），必须改的我就直接和开发沟通修改需求文档了；不能改的只能放到版本迭代的时候啦。<strong>写测试用例真的是一个很好的检验需求文档的方法</strong>。</p>
+<p>言归正传，接下来我要介绍下如何写测试用例啦。</p>
+<a id="more"></a>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>测试用例包含的条目：</p>
+<table>
+<thead>
+<tr>
+<th>功能模块</th>
+<th>用例编号</th>
+<th>测试点</th>
+<th>测试背景</th>
+<th>前置条件</th>
+<th>优先级</th>
+<th>测试数据</th>
+<th>测试步骤</th>
+<th>预期结果</th>
+<th>实际结果</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>贴心提示：不一定和上表完全一致，根据项目的需求和公司自己的用例模板写。</p>
+<h2 id="提取测试点"><a href="#提取测试点" class="headerlink" title="提取测试点"></a>提取测试点</h2><p>以注册、登录功能为例：</p>
+<table>
+<thead>
+<tr>
+<th>功能模块</th>
+<th>测试点编号</th>
+<th>测试点描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>注册</td>
+<td>register_01</td>
+<td>点击注册按钮，弹出注册对话框</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>register_02</td>
+<td>对输入的邮箱和手机号进行验证是否可用</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>register_03</td>
+<td>判断验证码是否正确</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>register_04</td>
+<td>点击注册跳转页面</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_01</td>
+<td>自动登录是否有效</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_02</td>
+<td>判断输入的邮箱、手机号是否符合规范</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_03</td>
+<td>账号为空时，点击登录</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_04</td>
+<td>账号错误时，点击登录</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_05</td>
+<td>密码为空时，点击登录</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_06</td>
+<td>密码错误时，点击登录</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_07</td>
+<td>账号、密码都为空时，点击登录</td>
+</tr>
+<tr>
+<td>登录</td>
+<td>loginin_08</td>
+<td>点击忘记密码，进入找回密码页面</td>
+</tr>
+</tbody>
+</table>
+<h2 id="测试方法"><a href="#测试方法" class="headerlink" title="测试方法"></a>测试方法</h2><h3 id="数据测试"><a href="#数据测试" class="headerlink" title="数据测试"></a>数据测试</h3><p>测试边界<br>默认、空白、空值、零值<br>非法、错误、不正确、垃圾数据</p>
+<h3 id="业务流程法"><a href="#业务流程法" class="headerlink" title="业务流程法"></a>业务流程法</h3><p>基本流和备用流。基于业务流程的一系列操作的总和，可用不用像功能点测试用例那么详细。</p>
+<h3 id="状态测试"><a href="#状态测试" class="headerlink" title="状态测试"></a>状态测试</h3><p>测试程序的状态及其转换。</p>
+<h2 id="测试用例示例"><a href="#测试用例示例" class="headerlink" title="测试用例示例"></a>测试用例示例</h2><p>根据前面提取的测试点，编写测试用例。</p>
+<table>
+<thead>
+<tr>
+<th>功能模块</th>
+<th>用例编号</th>
+<th>测试点</th>
+<th>测试背景</th>
+<th>前置条件</th>
+<th>优先级</th>
+<th>测试数据</th>
+<th>测试步骤</th>
+<th>预期结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>注册</td>
+<td>register_01</td>
+<td>点击注册按钮，弹出注册对话框</td>
+<td>测试注册功能完善</td>
+<td>—-</td>
+<td>高</td>
+<td>—-</td>
+<td>1.进入慕课网、2.点击注册按钮</td>
+<td>弹出注册对话框</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>register_02</td>
+<td>使用邮箱注册成功</td>
+<td>测试注册功能完善</td>
+<td>输入的邮箱未被注册</td>
+<td>高</td>
+<td>账号：19216810@163.com 密码：ABC123456</td>
+<td>1、输入邮箱地址2、其他项输入正确3、点击注册按钮</td>
+<td>提示用户注册成功</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>register_03</td>
+<td>使用错误邮箱注册失败</td>
+<td>测试注册功能完善</td>
+<td>输入的邮箱未被注册</td>
+<td>高</td>
+<td>账户：zz 密码：ABC123456</td>
+<td>1、输入邮箱地址2、其他项输入正确3、点击注册按钮</td>
+<td>提示用户注册失败</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>register_04</td>
+<td>使用空的邮箱注册失败</td>
+<td>测试注册功能完善</td>
+<td>–</td>
+<td>高</td>
+<td>账户：  密码：密码：ABC123456</td>
+<td>1、输入空的邮箱地址2、其他项输入正确3、点击注册按钮</td>
+<td>提示用户注册失败</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>register_04</td>
+<td>使用已注册的邮箱注册失败</td>
+<td>测试注册功能完善</td>
+<td>该邮箱已被注册过</td>
+<td>高</td>
+<td>账户：  密码：密码：ABC123456</td>
+<td>1、输入空的邮箱地址2、其他项输入正确3、点击注册按钮</td>
+<td>提示用户注册失败</td>
+</tr>
+</tbody>
+</table>
+<p>贴心提示：根据数据测试的分类，测试数据这一项可能有多种值。</p>
+<hr>
+<p>以上，笔拙请见谅。</p>
+<p>初心：希望这个博客能成为我心中的理想王国，我会按照自己的想法慢慢打磨它。会分享所见、所思、所得。</p>
+<p>————web前端业余爱好者、产品小白 ZhangMin献上</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/05/26/PM修炼-写测试用例/" data-id="cj3wh0zlq0000x0iio4emxcsj" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/06/06/处理需求的完整流程/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          处理需求的完整流程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/05/26/PM有效沟通的基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">PM有效沟通的基础</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/06/14/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/08/项目主导型公司-应对不同来源需求的方法/">项目主导型公司-应对不同来源需求的方法</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/06/处理需求的完整流程/">处理需求的完整流程</a>
+          </li>
+        
+          <li>
+            <a href="/2017/05/26/PM修炼-写测试用例/">PM修炼--写测试用例</a>
+          </li>
+        
+          <li>
+            <a href="/2017/05/26/PM有效沟通的基础/">PM有效沟通的基础</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
