@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/20/关于推荐策略的一点思考/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;最近一直在做视频类产品A的改进，之前的版本里内容推荐主要依赖手动推荐。现在想根据用户的个人习惯定制用户的浏览DNA库，为用户进行个性化推荐。在这篇文章中，并不打算详细说明推荐的具体算法（我也不懂哈），只是想提醒一下大家（and me），不同场景下用户的需求是不同的。">
-<meta property="og:updated_time" content="2017-06-20T14:05:51.007Z">
+<meta property="og:updated_time" content="2017-06-20T14:08:42.436Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于推荐策略的一点思考">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;最近一直在做视频类产品A的改进，之前的版本里内容推荐主要依赖手动推荐。现在想根据用户的个人习惯定制用户的浏览DNA库，为用户进行个性化推荐。在这篇文章中，并不打算详细说明推荐的具体算法（我也不懂哈），只是想提醒一下大家（and me），不同场景下用户的需求是不同的。">
@@ -340,11 +340,11 @@
       
 
       
-        <p>&emsp;&emsp;最近一直在做视频类产品A的改进，之前的版本里内容推荐主要依赖手动推荐。现在想根据用户的个人习惯定制用户的浏览DNA库，为用户进行个性化推荐。在这篇文章中，并不打算详细说明推荐的具体算法（我也不懂哈），只是想提醒一下大家（and me），不同场景下用户的需求是不同的。<br><a id="more"></a><br>推荐起源于搜索。当用户有很明确的需求时，通过搜索可以满足用户的需求；但是当用户的需求不明确或难以表达的时候，需要个性化的推荐将用户心中所想要的东西放到眼前。因此，推荐是搜索的一种补充，目前推荐在视频、文字、商品类的系统中占据越来越重要的角色，今日头条就是个活生生的例子。</p>
+        <p>&emsp;&emsp;最近一直在做视频类产品A的改进，之前的版本里内容推荐主要依赖手动推荐。现在想根据用户的个人习惯定制用户的浏览DNA库，为用户进行个性化推荐。在这篇文章中，并不打算详细说明推荐的具体算法（我也不懂哈），只是想提醒一下大家（and me），不同场景下用户的需求是不同的。<br><a id="more"></a><br>&emsp;&emsp;推荐起源于搜索。当用户有很明确的需求时，通过搜索可以满足用户的需求；但是当用户的需求不明确或难以表达的时候，需要个性化的推荐将用户心中所想要的东西放到眼前。因此，推荐是搜索的一种补充，目前推荐在视频、文字、商品类的系统中占据越来越重要的角色，今日头条就是个活生生的例子。</p>
 <h2 id="商品推荐"><a href="#商品推荐" class="headerlink" title="商品推荐"></a>商品推荐</h2><p>如果用户在一段时间之内经常浏览同一类商品，但却没有购买。下次用户再次进入app的时候可以继续推荐同类\同款商品。如果用户已经进行了购买操作，那么推荐就需要考虑一下。</p>
 <h3 id="根据商品属性进行推荐："><a href="#根据商品属性进行推荐：" class="headerlink" title="根据商品属性进行推荐："></a>根据商品属性进行推荐：</h3><p>快消品：例如牙膏、酸奶之类的，可以隔一段时间再次进行推荐同品牌的商品。<br>衣服类：用户购买一件衣服之后，几乎不可能再次买同款或同类型的衣服。因此按照快消品的推荐方式进行推荐是不可取的。</p>
 <h3 id="根据用户的特点那进行推荐："><a href="#根据用户的特点那进行推荐：" class="headerlink" title="根据用户的特点那进行推荐："></a>根据用户的特点那进行推荐：</h3><p>宝妈：如果用户经常浏览婴幼儿用品，根据用户的购买习惯推测用户的角色以及宝宝的年龄。根据宝宝不同年龄段需要的商品进行推荐。</p>
-<h2 id="视频推荐"><a href="#视频推荐" class="headerlink" title="视频推荐"></a>视频推荐</h2><h3 id="根据视频类型"><a href="#根据视频类型" class="headerlink" title="根据视频类型"></a>根据视频类型</h3><p>频道：用户比较容易钟爱某一个频道，因此频道的推荐可以根据用户在该频道停留的时间长短进行推荐；<br>电视剧：电视剧的特点是，用户可能会天天追。所以做电视剧推荐的时候，结合用户最近一段时间，浏览某部剧的时长进行综合评估。<br>电影：第一点，电影的特点是看过的剧，几乎不会再看第二遍。因此在做推荐时，不需要推荐用户已经看过的剧。第二点，通常用户比较关注，最近一段时间上映的电影。因此，可根据用户的观影爱好类型、影片的上映时间结合进行推荐。<br>体育赛事：关于体育用户的喜好有两个方面，一方面是对某项体育运动的爱好；另一方面是对某一体育赛事的爱好。例如，喜欢篮球运动的用户，通常喜欢观看篮球比赛；奥运会的时候，一些不怎么爱好运动的用户也会想观看奥运会。<br>新闻资讯：用户很少有重复看某条新闻的需求。但是用户对某一新闻节目会有较高的认可。<br>音乐：重复听。用户对某一个歌手或某一首歌会特别钟爱。</p>
+<h2 id="视频推荐"><a href="#视频推荐" class="headerlink" title="视频推荐"></a>视频推荐</h2><h3 id="根据视频类型进行推荐："><a href="#根据视频类型进行推荐：" class="headerlink" title="根据视频类型进行推荐："></a>根据视频类型进行推荐：</h3><p>频道：用户比较容易钟爱某一个频道，因此频道的推荐可以根据用户在该频道停留的时间长短进行推荐；<br>电视剧：电视剧的特点是，用户可能会天天追。所以做电视剧推荐的时候，结合用户最近一段时间，浏览某部剧的时长进行综合评估。<br>电影：第一点，电影的特点是看过的剧，几乎不会再看第二遍。因此在做推荐时，不需要推荐用户已经看过的剧。第二点，通常用户比较关注，最近一段时间上映的电影。因此，可根据用户的观影爱好类型、影片的上映时间结合进行推荐。<br>体育赛事：关于体育用户的喜好有两个方面，一方面是对某项体育运动的爱好；另一方面是对某一体育赛事的爱好。例如，喜欢篮球运动的用户，通常喜欢观看篮球比赛；奥运会的时候，一些不怎么爱好运动的用户也会想观看奥运会。<br>新闻资讯：用户很少有重复看某条新闻的需求。但是用户对某一新闻节目会有较高的认可。<br>音乐：重复听。用户对某一个歌手或某一首歌会特别钟爱。</p>
 
       
     </div>
@@ -524,7 +524,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#商品推荐"><span class="nav-number">1.</span> <span class="nav-text">商品推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#根据商品属性进行推荐："><span class="nav-number">1.1.</span> <span class="nav-text">根据商品属性进行推荐：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据用户的特点那进行推荐："><span class="nav-number">1.2.</span> <span class="nav-text">根据用户的特点那进行推荐：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频推荐"><span class="nav-number">2.</span> <span class="nav-text">视频推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#根据视频类型"><span class="nav-number">2.1.</span> <span class="nav-text">根据视频类型</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#商品推荐"><span class="nav-number">1.</span> <span class="nav-text">商品推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#根据商品属性进行推荐："><span class="nav-number">1.1.</span> <span class="nav-text">根据商品属性进行推荐：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据用户的特点那进行推荐："><span class="nav-number">1.2.</span> <span class="nav-text">根据用户的特点那进行推荐：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频推荐"><span class="nav-number">2.</span> <span class="nav-text">视频推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#根据视频类型进行推荐："><span class="nav-number">2.1.</span> <span class="nav-text">根据视频类型进行推荐：</span></a></li></ol></li></ol></div>
             
 
           </div>
