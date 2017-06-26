@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="产品方法论," />
 
 
 
@@ -93,16 +93,17 @@
 
 
 
-<meta name="description" content="前言这两天处理新需求的时候，面临了沟通上的问题。这个需求用到的技术是公司目前还不具备的，因此涉及到多方人员（底层、应用、需求）协助确认方案。在rtx上一方一方单独去做确认时，每一方都会认为这是其他人的工作。所以，很长时间都没有得到解决的办法。拉群讨论，也常常遇到想回答的人不知道怎么回答，能回答的人不想回答的情况，所以经常一上午讨论不出个结果。轻易拉会议又不是很可取的方式。  以上，问题描述清楚了。">
+<meta name="description" content="登录与注册几乎是每个产品都需要的功能，是用户最早接触到产品功能。然而注册功能又是产品设计中坑最多的功能，设计好注册、登录功能是一个产品经理的基本功。系统地学习、总结登录与注册的方法论，在以后的产品规划工作中可以直接拿过来复用。">
+<meta name="keywords" content="产品方法论">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PM有效沟通的基础">
-<meta property="og:url" content="http://yoursite.com/2017/05/26/PM有效沟通的基础/index.html">
+<meta property="og:title" content="如何设计登录与注册">
+<meta property="og:url" content="http://yoursite.com/2017/06/25/登录与注册/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言这两天处理新需求的时候，面临了沟通上的问题。这个需求用到的技术是公司目前还不具备的，因此涉及到多方人员（底层、应用、需求）协助确认方案。在rtx上一方一方单独去做确认时，每一方都会认为这是其他人的工作。所以，很长时间都没有得到解决的办法。拉群讨论，也常常遇到想回答的人不知道怎么回答，能回答的人不想回答的情况，所以经常一上午讨论不出个结果。轻易拉会议又不是很可取的方式。  以上，问题描述清楚了。">
-<meta property="og:updated_time" content="2017-05-26T09:23:28.930Z">
+<meta property="og:description" content="登录与注册几乎是每个产品都需要的功能，是用户最早接触到产品功能。然而注册功能又是产品设计中坑最多的功能，设计好注册、登录功能是一个产品经理的基本功。系统地学习、总结登录与注册的方法论，在以后的产品规划工作中可以直接拿过来复用。">
+<meta property="og:updated_time" content="2017-06-25T15:20:37.929Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PM有效沟通的基础">
-<meta name="twitter:description" content="前言这两天处理新需求的时候，面临了沟通上的问题。这个需求用到的技术是公司目前还不具备的，因此涉及到多方人员（底层、应用、需求）协助确认方案。在rtx上一方一方单独去做确认时，每一方都会认为这是其他人的工作。所以，很长时间都没有得到解决的办法。拉群讨论，也常常遇到想回答的人不知道怎么回答，能回答的人不想回答的情况，所以经常一上午讨论不出个结果。轻易拉会议又不是很可取的方式。  以上，问题描述清楚了。">
+<meta name="twitter:title" content="如何设计登录与注册">
+<meta name="twitter:description" content="登录与注册几乎是每个产品都需要的功能，是用户最早接触到产品功能。然而注册功能又是产品设计中坑最多的功能，设计好注册、登录功能是一个产品经理的基本功。系统地学习、总结登录与注册的方法论，在以后的产品规划工作中可以直接拿过来复用。">
 
 
 
@@ -130,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/26/PM有效沟通的基础/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/25/登录与注册/"/>
 
 
 
 
 
-  <title>PM有效沟通的基础 | Hexo</title>
+  <title>如何设计登录与注册 | Hexo</title>
   
 
 
@@ -275,7 +276,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/26/PM有效沟通的基础/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/25/登录与注册/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangxiaoxiaomin">
@@ -292,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PM有效沟通的基础</h1>
+          <h1 class="post-title" itemprop="name headline">如何设计登录与注册</h1>
         
 
         <div class="post-meta">
@@ -304,8 +305,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-26T15:18:54+08:00">
-                2017-05-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T18:40:58+08:00">
+                2017-06-25
               </time>
             
 
@@ -314,6 +315,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品方法论/" itemprop="url" rel="index">
+                    <span itemprop="name">产品方法论</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -339,52 +362,12 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这两天处理新需求的时候，面临了沟通上的问题。这个需求用到的技术是公司目前还不具备的，因此涉及到多方人员（底层、应用、需求）协助确认方案。在rtx上一方一方单独去做确认时，每一方都会认为这是其他人的工作。所以，很长时间都没有得到解决的办法。拉群讨论，也常常遇到想回答的人不知道怎么回答，能回答的人不想回答的情况，所以经常一上午讨论不出个结果。轻易拉会议又不是很可取的方式。</p>
-<hr>
-<p>以上，问题描述清楚了。<br><a id="more"></a></p>
-<h2 id="了解其他人在干什么（越多越好）"><a href="#了解其他人在干什么（越多越好）" class="headerlink" title="了解其他人在干什么（越多越好）"></a>了解其他人在干什么（越多越好）</h2><ol>
-<li>了解每个岗位在干什么</li>
-<li>了解各岗位的产出是什么</li>
-</ol>
-<h3 id="每个岗位在干什么"><a href="#每个岗位在干什么" class="headerlink" title="每个岗位在干什么"></a>每个岗位在干什么</h3><p>如第一项，了解每个人的岗位。作为还处于试用期的新人，最大的问题就是新任务来了，却不知道可以找谁来解决。当然入职的时候，前辈会告诉你大致的人员分工情况，但是作为PM要接触的人太广了，以至于不久你就会混乱。此时你需要一张表来进行记录，这也方便其他人接手工作时做工作交接。</p>
-<pre><code>示例：
-</code></pre><blockquote>
-<table>
-<thead>
-<tr>
-<th>工作内容</th>
-<th>负责人</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>解决方案</td>
-<td>zhou</td>
-</tr>
-<tr>
-<td>马赛克服务器</td>
-<td>liu、fei</td>
-</tr>
-<tr>
-<td>播放器</td>
-<td>gong</td>
-</tr>
-<tr>
-<td>演示</td>
-<td>lzl</td>
-</tr>
-<tr>
-<td>服务器搭建</td>
-<td>pan</td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-<h3 id="各岗位的产出"><a href="#各岗位的产出" class="headerlink" title="各岗位的产出"></a>各岗位的产出</h3><p>每个岗位应该会有标准的产出（没有也要极力促成有），只有保证了这点，才不会出现岗位之间职责模糊的情况。PM的必备能力是明确知道各个岗位的产出格式（就是因为没掌握这点，所以在多个部门之间协调时，被牵着鼻子走，讨论效率低下）。</p>
-<p>产出有可能是文档，例如PM的产出通常有PRD文档、功能性测试用例、方案文档；也可能是代码，前端开发人员的产出是实现前端展示效果的代码；中间件的产出是底层中间价级别的功能支持。</p>
-<hr>
-<p>以上，这是第一次写博客，笔拙请见谅。</p>
-<p>初心：希望这个博客能成为我心中的理想王国，我会按照自己的想法慢慢打磨它。会分享所见、所思、所得，主要是工作方面。<br>————web前端业余爱好者、产品小白 ZhangMin献上</p>
+        <p>登录与注册几乎是每个产品都需要的功能，是用户最早接触到产品功能。然而注册功能又是产品设计中坑最多的功能，设计好注册、登录功能是一个产品经理的基本功。系统地学习、总结登录与注册的方法论，在以后的产品规划工作中可以直接拿过来复用。<br><a id="more"></a></p>
+<h2 id="为什么要注册账户、登录账户"><a href="#为什么要注册账户、登录账户" class="headerlink" title="为什么要注册账户、登录账户"></a>为什么要注册账户、登录账户</h2><h4 id="用户角度"><a href="#用户角度" class="headerlink" title="用户角度"></a>用户角度</h4><p>用户画像与个性化推荐；<br>用户之间进行交互，获取对方的信息；</p>
+<h4 id="功能角度"><a href="#功能角度" class="headerlink" title="功能角度"></a>功能角度</h4><p>跨设备同步数据，同一设备中切换不同的账户并保留账户之前的状态。<br>有社交功能的产品必须注册账号以编写自己的UGC内容，同时便于其他用户辨识。<br>有交易功能的产品，为个人账户记录交易信息，同时确保交易的安全性。<br>有应用内付费、VIP会员增值功能的产品，注册登录确保用户权益。</p>
+<h4 id="业务层面"><a href="#业务层面" class="headerlink" title="业务层面"></a>业务层面</h4><p>需要采集对于核心业务非常重要的信息，比如手机号、真实姓名等信息；<br>注册登录后便于采集运营数据；<br>用户激励：通过注册得到手机号、邮箱账户后，推送获得信息和优惠券给用户以提高产品活跃度；</p>
+<h2 id="用什么信息注册账户"><a href="#用什么信息注册账户" class="headerlink" title="用什么信息注册账户"></a>用什么信息注册账户</h2><p>手机号码<br>邮箱<br>第三方账户注册<br>……<br>分别有什么优势呢？</p>
+<h2 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h2><h2 id="密码找回"><a href="#密码找回" class="headerlink" title="密码找回"></a>密码找回</h2><h2 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h2><p>用户名登录、手机号码登录、邮箱登录</p>
 
       
     </div>
@@ -412,6 +395,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/产品方法论/" rel="tag"># 产品方法论</a>
+          
+        </div>
+      
 
       
       
@@ -421,8 +410,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/24/如何使用HEXO写博客/" rel="next" title="如何使用HEXO写博客">
-                <i class="fa fa-chevron-left"></i> 如何使用HEXO写博客
+              <a href="/2017/06/24/《好好说话》/" rel="next" title="《好好说话》">
+                <i class="fa fa-chevron-left"></i> 《好好说话》
               </a>
             
           </div>
@@ -431,8 +420,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/26/PM修炼-写测试用例/" rel="prev" title="PM修炼--写测试用例">
-                PM修炼--写测试用例 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/26/版本迭代时的兼容问题/" rel="prev" title="版本迭代时的兼容问题">
+                版本迭代时的兼容问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -562,7 +551,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#了解其他人在干什么（越多越好）"><span class="nav-number">1.1.</span> <span class="nav-text">了解其他人在干什么（越多越好）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#每个岗位在干什么"><span class="nav-number">1.1.1.</span> <span class="nav-text">每个岗位在干什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#各岗位的产出"><span class="nav-number">1.1.2.</span> <span class="nav-text">各岗位的产出</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要注册账户、登录账户"><span class="nav-number">1.</span> <span class="nav-text">为什么要注册账户、登录账户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户角度"><span class="nav-number">1.0.1.</span> <span class="nav-text">用户角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能角度"><span class="nav-number">1.0.2.</span> <span class="nav-text">功能角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#业务层面"><span class="nav-number">1.0.3.</span> <span class="nav-text">业务层面</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用什么信息注册账户"><span class="nav-number">2.</span> <span class="nav-text">用什么信息注册账户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册流程"><span class="nav-number">3.</span> <span class="nav-text">注册流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密码找回"><span class="nav-number">4.</span> <span class="nav-text">密码找回</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录"><span class="nav-number">5.</span> <span class="nav-text">登录</span></a></li></ol></div>
             
 
           </div>
