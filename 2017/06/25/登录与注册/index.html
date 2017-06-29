@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="登录与注册几乎是每个产品都需要的功能，是用户最早接触到产品功能。然而注册功能又是产品设计中坑最多的功能，设计好注册、登录功能是一个产品经理的基本功。系统地学习、总结登录与注册的方法论，在以后的产品规划工作中可以直接拿过来复用。">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E7%89%87.jpg">
-<meta property="og:updated_time" content="2017-06-27T14:29:50.761Z">
+<meta property="og:updated_time" content="2017-06-29T14:25:25.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何设计登录与注册">
 <meta name="twitter:description" content="登录与注册几乎是每个产品都需要的功能，是用户最早接触到产品功能。然而注册功能又是产品设计中坑最多的功能，设计好注册、登录功能是一个产品经理的基本功。系统地学习、总结登录与注册的方法论，在以后的产品规划工作中可以直接拿过来复用。">
@@ -414,10 +414,39 @@
 <p>不用任何其他信息注册</p>
 </blockquote>
 <h4 id="密码的分类"><a href="#密码的分类" class="headerlink" title="密码的分类"></a>密码的分类</h4><p>纯数字<br>数字+字母+下划线等特殊符号<br>特殊密码：TV遥控器按键。</p>
-<h4 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h4><p>要不要加验证码？<br>手机验证码、图片验证码<br>使用协议</p>
-<h2 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h2><h2 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h2><h4 id="什么时候登录"><a href="#什么时候登录" class="headerlink" title="什么时候登录"></a>什么时候登录</h4><p>用户名登录、手机号码登录、邮箱登录</p>
+<p>不同类型密码的安全性对比：</p>
+<h4 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h4><p>有些App注册的时候需要用户先输入图片验证码，这样做的目的是为了防止机器人大量注册垃圾账户恶意刷单、注水。</p>
+<p>验证码的类型：纯字母、简单加减乘除、中文字符、滑动拼图 有差别吗</p>
+<p>使用协议</p>
+<h2 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h2><h2 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h2><h4 id="什么时候登录是最好的时机"><a href="#什么时候登录是最好的时机" class="headerlink" title="什么时候登录是最好的时机"></a>什么时候登录是最好的时机</h4><p>用户名登录、手机号码登录、邮箱登录<br>根据不同产品的需求不同，从不同角度、不同场景设计登录的时机是不一样的。</p>
+<blockquote>
+<p>用户需求</p>
+</blockquote>
+<p>分析用户使用产品的迫切程度，通常用户第一次安装使用一个软件时，可以分为三种不同的心理：</p>
+<ol>
+<li>用户有强烈愿望使用产品。一种是产品功能对用户来说非常有价值，用户愿意花费时间注册使用，比如手游。另一种是产品的功能很新、很奇特，用户很想试试。这时可以让用户先注册再使用。</li>
+<li>用户希望先看一看，好用了再注册。由于大部分用户第一次使用肯定是抱着试试看的态度来的，为了给用户留下最好的第一印象，先使用再注册的流程是必要的。这就是一种体验式消费、先尝后买的销售思路。目前大多是App就是这样的，如果你的App不能让用户有强烈的使用愿望，最好的选择是先让用户去使用，用好了再注册。</li>
+<li>用户觉得没必要注册，但产品的功能偶尔会用到。一些使用频度较低的APP，比如铃声、壁纸类软件，以及一些工具+社交类的软件，对于用户来说注册功能对用户带来不了任何价值， 这类APP建议使用先使用后注册的方式。</li>
+</ol>
+<blockquote>
+<p>功能需求</p>
+</blockquote>
+<p>从功能角度思考，一种情况是产品的核心功能对用户体系依赖程度非常大时，可以先注册再使用。比如QQ、微信、陌陌这样的社交软件，不登录无法正常使用功能。另一种情况是产品某些功能需要用户登录，但对其它功能没影响时，可以使用到该功能时再登录。比如电商APP可以先浏览，在加入购物车或下单时再登录。</p>
+<blockquote>
+<p>业务需求</p>
+</blockquote>
+<p>从业务角度来判断，注册信息如果对产品核心业务非常重要的话，可以考虑先注册的模式，或者常用的做法是进入APP的第一屏是注册页面，但在角落里留下“游客入口”的按钮。当然，如果只是为了获取用户的手机号等信息，也不一定非要通过注册这一种途径。可以在产品功能页面中引导用户录入信息或注册。比如驾考宝典的“帮你选车”的小测试功能。</p>
 <h4 id="什么方式登录"><a href="#什么方式登录" class="headerlink" title="什么方式登录"></a>什么方式登录</h4><p>手机号+短信验证码快速登录<br>用户名+密码登录<br>手机号+密码<br>邮箱+密码<br>第三方账户登录：微信\QQ\微博\邮箱</p>
-<h4 id="不同端登录的差异性与多屏互动"><a href="#不同端登录的差异性与多屏互动" class="headerlink" title="不同端登录的差异性与多屏互动"></a>不同端登录的差异性与多屏互动</h4><h2 id="登录、注册业务的闭环"><a href="#登录、注册业务的闭环" class="headerlink" title="登录、注册业务的闭环"></a>登录、注册业务的闭环</h2><h2 id="密码找回流程"><a href="#密码找回流程" class="headerlink" title="密码找回流程"></a>密码找回流程</h2>
+<h4 id="不同端登录的差异性与多屏互动"><a href="#不同端登录的差异性与多屏互动" class="headerlink" title="不同端登录的差异性与多屏互动"></a>不同端登录的差异性与多屏互动</h4><h2 id="登录、注册业务的闭环"><a href="#登录、注册业务的闭环" class="headerlink" title="登录、注册业务的闭环"></a>登录、注册业务的闭环</h2><h2 id="密码找回流程"><a href="#密码找回流程" class="headerlink" title="密码找回流程"></a>密码找回流程</h2><h2 id="怎么确定本产品需要用户使用什么信息进行注册"><a href="#怎么确定本产品需要用户使用什么信息进行注册" class="headerlink" title="怎么确定本产品需要用户使用什么信息进行注册"></a>怎么确定本产品需要用户使用什么信息进行注册</h2><blockquote>
+<p>用户需求</p>
+</blockquote>
+<p>对用户来说，不同的注册登录方式的优缺点很明显。不同于的行为习惯不同，会表现不同的偏好：有的人不喜欢泄露手机号、有的用户没有邮箱、有的用户没有安装第三方软件。为了满足不同的喜好，最理想的状态是支持尽可能多样的登录方式，让用户自己去选择。</p>
+<p>也可具体结合产品的用户群体特点进行分析，确定适合的注册方式。例如，我的产品用户基本没有使用邮箱的习惯且不考虑海外用户群体，那么就可以不考虑邮箱注册的方式。比如我的群体是大学生，大学生换号的频率高，为了避免换号带来的麻烦，应该要支持邮箱注册的方式。</p>
+<blockquote>
+<p>业务需求</p>
+</blockquote>
+<p>考虑用户的哪些信息对业务需求比较重要，比如商品推销类的网站只看重用户的手机号码，这样注册方式里可以只保留手机号码注册方式。</p>
+
       
     </div>
 
@@ -600,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要注册账户、登录账户"><span class="nav-number">1.</span> <span class="nav-text">为什么要注册账户、登录账户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户角度"><span class="nav-number">1.0.1.</span> <span class="nav-text">用户角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能角度"><span class="nav-number">1.0.2.</span> <span class="nav-text">功能角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#业务层面"><span class="nav-number">1.0.3.</span> <span class="nav-text">业务层面</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用什么信息注册账户"><span class="nav-number">2.</span> <span class="nav-text">用什么信息注册账户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#密码的分类"><span class="nav-number">2.0.1.</span> <span class="nav-text">密码的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#验证码"><span class="nav-number">2.0.2.</span> <span class="nav-text">验证码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册流程"><span class="nav-number">3.</span> <span class="nav-text">注册流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录"><span class="nav-number">4.</span> <span class="nav-text">登录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么时候登录"><span class="nav-number">4.0.1.</span> <span class="nav-text">什么时候登录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么方式登录"><span class="nav-number">4.0.2.</span> <span class="nav-text">什么方式登录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不同端登录的差异性与多屏互动"><span class="nav-number">4.0.3.</span> <span class="nav-text">不同端登录的差异性与多屏互动</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录、注册业务的闭环"><span class="nav-number">5.</span> <span class="nav-text">登录、注册业务的闭环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密码找回流程"><span class="nav-number">6.</span> <span class="nav-text">密码找回流程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要注册账户、登录账户"><span class="nav-number">1.</span> <span class="nav-text">为什么要注册账户、登录账户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户角度"><span class="nav-number">1.0.1.</span> <span class="nav-text">用户角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能角度"><span class="nav-number">1.0.2.</span> <span class="nav-text">功能角度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#业务层面"><span class="nav-number">1.0.3.</span> <span class="nav-text">业务层面</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用什么信息注册账户"><span class="nav-number">2.</span> <span class="nav-text">用什么信息注册账户</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#密码的分类"><span class="nav-number">2.0.1.</span> <span class="nav-text">密码的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#验证码"><span class="nav-number">2.0.2.</span> <span class="nav-text">验证码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册流程"><span class="nav-number">3.</span> <span class="nav-text">注册流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录"><span class="nav-number">4.</span> <span class="nav-text">登录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么时候登录是最好的时机"><span class="nav-number">4.0.1.</span> <span class="nav-text">什么时候登录是最好的时机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么方式登录"><span class="nav-number">4.0.2.</span> <span class="nav-text">什么方式登录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不同端登录的差异性与多屏互动"><span class="nav-number">4.0.3.</span> <span class="nav-text">不同端登录的差异性与多屏互动</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录、注册业务的闭环"><span class="nav-number">5.</span> <span class="nav-text">登录、注册业务的闭环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密码找回流程"><span class="nav-number">6.</span> <span class="nav-text">密码找回流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么确定本产品需要用户使用什么信息进行注册"><span class="nav-number">7.</span> <span class="nav-text">怎么确定本产品需要用户使用什么信息进行注册</span></a></li></ol></div>
             
 
           </div>
