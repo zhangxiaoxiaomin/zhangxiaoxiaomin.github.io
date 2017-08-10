@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/09/使用adb工具安装apk/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="本文记录如何使用adb工具安装软件到android盒子。">
-<meta property="og:updated_time" content="2017-08-09T13:44:51.614Z">
+<meta property="og:updated_time" content="2017-08-10T05:03:53.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用adb工具安装apk">
 <meta name="twitter:description" content="本文记录如何使用adb工具安装软件到android盒子。">
@@ -342,15 +342,28 @@
       
         <p>本文记录如何使用adb工具安装软件到android盒子。<br><a id="more"></a></p>
 <h1 id="安装adb"><a href="#安装adb" class="headerlink" title="安装adb"></a>安装adb</h1><p>下载并安装adb工具。下载地址：<a href="http://dl.pconline.com.cn/download/359035.html" target="_blank" rel="external">http://dl.pconline.com.cn/download/359035.html</a><br>安装完成后，打开cmd窗口，输入命令adb，可查看adb工具的详细信息，否则安装失败。</p>
-<h1 id="通过IP连接"><a href="#通过IP连接" class="headerlink" title="通过IP连接"></a>通过IP连接</h1><ol>
+<h1 id="通过IP连接设备"><a href="#通过IP连接设备" class="headerlink" title="通过IP连接设备"></a>通过IP连接设备</h1><ol>
 <li>将盒子与电脑连在同一路由器下。（保证同一网段）</li>
 <li>查看盒子的IP地址，改为自动获取IP地址。</li>
-<li>adb connect X.X.X.X /盒子ip/<br>adb remount意思是将设备改为可读可写;<br>adb push C:\XX.apk /system/app /更新apk</li>
+<li>adb connect X.X.X.X                    盒子ip<br>adb remount                            意思是将设备改为可读可写;</li>
+</ol>
+<h1 id="安装apk"><a href="#安装apk" class="headerlink" title="安装apk"></a>安装apk</h1><p>有两种方式：</p>
+<ol>
+<li>adb push C:\XX.apk /system/app         </li>
+<li>adb install  C:\XX.apk /system/app     安装</li>
 </ol>
 <blockquote>
 <p>异常：daemon not running. starting it now on port 5037 *<br>解决方案：<a href="http://blog.csdn.net/xishuluoye/article/details/17880663" target="_blank" rel="external">http://blog.csdn.net/xishuluoye/article/details/17880663</a></p>
 </blockquote>
 <h1 id="手动启动"><a href="#手动启动" class="headerlink" title="手动启动"></a>手动启动</h1><p>adb shell<br>am start -n 包名/类名</p>
+<h1 id="若需要再次安装："><a href="#若需要再次安装：" class="headerlink" title="若需要再次安装："></a>若需要再次安装：</h1><p>有两种方式：</p>
+<ol>
+<li>adb install -r C:\XX.apk /system/app     （覆盖安装）</li>
+<li>adb uninstall 包名  （卸载后，再次安装）</li>
+</ol>
+<h1 id="查看盒子目录"><a href="#查看盒子目录" class="headerlink" title="查看盒子目录"></a>查看盒子目录</h1><p>adb shell<br>cd 路径<br>ls<br>可查看盒子指定路径下的文件夹</p>
+<p>ctrl+c 退出</p>
+<p>rm -f 文件名  删除某个文件</p>
 
       
     </div>
@@ -530,7 +543,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装adb"><span class="nav-number">1.</span> <span class="nav-text">安装adb</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过IP连接"><span class="nav-number">2.</span> <span class="nav-text">通过IP连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#手动启动"><span class="nav-number">3.</span> <span class="nav-text">手动启动</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装adb"><span class="nav-number">1.</span> <span class="nav-text">安装adb</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过IP连接设备"><span class="nav-number">2.</span> <span class="nav-text">通过IP连接设备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装apk"><span class="nav-number">3.</span> <span class="nav-text">安装apk</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#手动启动"><span class="nav-number">4.</span> <span class="nav-text">手动启动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#若需要再次安装："><span class="nav-number">5.</span> <span class="nav-text">若需要再次安装：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看盒子目录"><span class="nav-number">6.</span> <span class="nav-text">查看盒子目录</span></a></li></ol></div>
             
 
           </div>
