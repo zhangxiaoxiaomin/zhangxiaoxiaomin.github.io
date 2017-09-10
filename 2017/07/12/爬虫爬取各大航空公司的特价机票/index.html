@@ -100,12 +100,21 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/12/爬虫爬取各大航空公司的特价机票/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="异地恋，经常需要往来深圳-北京，特价票的需求量很大。很多航空公司官网机票价格比携程、去哪儿上的要便宜，一个一个比对太花时间，因此准备学着写一个爬虫，爬取几个主流航空公司的机票价格。有几点要求：1.确定的出发地、目的地； 2.根据出行时间排序；3.根据价格排序。">
-<meta property="og:image" content="http://yoursite.com/2017/07/12/爬虫爬取各大航空公司的特价机票/img/pachong-01.png">
-<meta property="og:updated_time" content="2017-09-10T14:43:18.491Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-01.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-02.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-03.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-04.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-05.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-06.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-07.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-08.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-09.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-10.png">
+<meta property="og:updated_time" content="2017-09-10T15:01:09.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="爬虫入门">
 <meta name="twitter:description" content="异地恋，经常需要往来深圳-北京，特价票的需求量很大。很多航空公司官网机票价格比携程、去哪儿上的要便宜，一个一个比对太花时间，因此准备学着写一个爬虫，爬取几个主流航空公司的机票价格。有几点要求：1.确定的出发地、目的地； 2.根据出行时间排序；3.根据价格排序。">
-<meta name="twitter:image" content="http://yoursite.com/2017/07/12/爬虫爬取各大航空公司的特价机票/img/pachong-01.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-01.png">
 
 
 
@@ -345,7 +354,16 @@
         <p>异地恋，经常需要往来深圳-北京，特价票的需求量很大。很多航空公司官网机票价格比携程、去哪儿上的要便宜，一个一个比对太花时间，因此准备学着写一个爬虫，爬取几个主流航空公司的机票价格。<br>有几点要求：1.确定的出发地、目的地； 2.根据出行时间排序；3.根据价格排序。</p>
 <a id="more"></a>
 <h1 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h1><p>chrome浏览器、Web Scraper插件</p>
-<h1 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h1><p>抓取八步曲：<br>1.Chrome页面右键-&gt;检查-&gt;WebScraper<br><img src="img/pachong-01.png" alt=""></p>
+<h1 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h1><p>抓取八步曲：<br>1.Chrome页面右键-&gt;检查-&gt;WebScraper<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-01.png" alt="pachong-01"></p>
+<p>2.创建一个新站点 Create sitemap<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-02.png" alt="pachong-02"></p>
+<p>3.输入站点名称（自定义）和网址（目标网址），点击Create sitemap的确认按钮。<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-03.png" alt="pachong-03"></p>
+<p>4.新增选择器，点击Add new selector<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-04.png" alt="pachong-04"></p>
+<p>5.选择器配置<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-05.png" alt="pachong-05"><br>点击Select后，接着在目标网页中选择要抓取的信息。<br>例如要抓取本页面的所有回答的标题信息，依次点击同类型元素，这样本页面所有回答的标题都会自动被选择。<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-06.png" alt="pachong-06"><br>点击Done selecting，可以点击Element preview预览选中要抓取的数据是否正确。<br>设置delay，通常设置为500ms，有两方面原因：1.等待数据动态加载；2.网络比较卡，我们或者对方服务器网络比较卡时，需要过几百毫秒后页面才能加载完毕。<br>点击 Save selector。</p>
+<p>6.抓取数据。<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-07.png" alt="pachong-07"><br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-08.png" alt="pachong-08"><br>设置Request interval 请求间隔：2000ms<br>有两方面原因：1.如果访问频率过高会导致目标网站服务器负载过大，影响正常访问；2.访问频率过高会被目标网站的反爬虫机制检测到而加入黑名单。</p>
+<p>设置Page load delay 页面加载延迟：500ms<br>1.等待数据动态加载；<br>2.网络比较卡，我们或者对方服务器网络比较卡。</p>
+<p>点击Start scraping后，自动弹框开始抓取。</p>
+<p>7.导出数据，可用excel进行编辑<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-09.png" alt="pachong-09"></p>
+<p>8.抓取规律的多页数据,点击Edit metadata设置<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/pachong-10.png" alt="pachong-10"><br>规律的多页数据分为两类：<br>1.类似知乎的 <a href="https://www.zhihu.com/people/huangyoucan/answers?page=1" target="_blank" rel="external">https://www.zhihu.com/people/huangyoucan/answers?page=1</a><br>要抓取多个页面，Start URL可以设置为 <a href="https://www.zhihu.com/people/huangyoucan/answers?page=[1-7" target="_blank" rel="external">https://www.zhihu.com/people/huangyoucan/answers?page=[1-7</a>]<br>2.类似豆瓣的 <a href="https://movie.douban.com/review/best/?start=0" target="_blank" rel="external">https://movie.douban.com/review/best/?start=0</a><br>要抓取多个页面，Start URL可以设置为<a href="https://movie.douban.com/review/best/?start=[0-100:20" target="_blank" rel="external">https://movie.douban.com/review/best/?start=[0-100:20</a>]</p>
 
       
     </div>
