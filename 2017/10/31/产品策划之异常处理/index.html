@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="工具系列," />
+  <meta name="keywords" content="产品经理," />
 
 
 
@@ -93,19 +93,17 @@
 
 
 
-<meta name="description" content="本文记录如何使用adb工具安装软件到android盒子。">
-<meta name="keywords" content="工具系列">
+<meta name="description" content="虽然很花时间，但每一秒认真投入其中的时间，将来都会10倍的回报你。事先没有想清楚的，最后一定会报复你的。">
+<meta name="keywords" content="产品经理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="工具系列01-使用adb工具安装apk">
-<meta property="og:url" content="http://yoursite.com/2017/08/09/使用adb工具安装apk/index.html">
+<meta property="og:title" content="产品策划之异常处理">
+<meta property="og:url" content="http://yoursite.com/2017/10/31/产品策划之异常处理/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="本文记录如何使用adb工具安装软件到android盒子。">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E5%AE%89%E8%A3%85apk.png">
-<meta property="og:updated_time" content="2017-09-25T01:06:07.536Z">
+<meta property="og:description" content="虽然很花时间，但每一秒认真投入其中的时间，将来都会10倍的回报你。事先没有想清楚的，最后一定会报复你的。">
+<meta property="og:updated_time" content="2017-10-31T03:09:07.249Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="工具系列01-使用adb工具安装apk">
-<meta name="twitter:description" content="本文记录如何使用adb工具安装软件到android盒子。">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E5%AE%89%E8%A3%85apk.png">
+<meta name="twitter:title" content="产品策划之异常处理">
+<meta name="twitter:description" content="虽然很花时间，但每一秒认真投入其中的时间，将来都会10倍的回报你。事先没有想清楚的，最后一定会报复你的。">
 
 
 
@@ -133,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/09/使用adb工具安装apk/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/31/产品策划之异常处理/"/>
 
 
 
 
 
-  <title>工具系列01-使用adb工具安装apk | Hexo</title>
+  <title>产品策划之异常处理 | Hexo</title>
   
 
 
@@ -278,7 +276,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/09/使用adb工具安装apk/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/31/产品策划之异常处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangxiaoxiaomin">
@@ -295,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">工具系列01-使用adb工具安装apk</h1>
+          <h1 class="post-title" itemprop="name headline">产品策划之异常处理</h1>
         
 
         <div class="post-meta">
@@ -307,8 +305,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-09T21:29:40+08:00">
-                2017-08-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-31T09:55:12+08:00">
+                2017-10-31
               </time>
             
 
@@ -342,36 +340,19 @@
       
 
       
-        <p>本文记录如何使用adb工具安装软件到android盒子。<br><a id="more"></a></p>
-<h1 id="安装adb"><a href="#安装adb" class="headerlink" title="安装adb"></a>安装adb</h1><p>下载并安装adb工具。下载地址：<a href="http://dl.pconline.com.cn/download/359035.html" target="_blank" rel="external">http://dl.pconline.com.cn/download/359035.html</a><br>安装完成后，打开cmd窗口，输入命令adb，可查看adb工具的详细信息，否则安装失败。</p>
-<h1 id="通过IP连接设备"><a href="#通过IP连接设备" class="headerlink" title="通过IP连接设备"></a>通过IP连接设备</h1><ol>
-<li>查看盒子的IP地址，改为自动获取IP地址。</li>
-<li>adb connect X.X.X.X                    盒子ip<br>adb remount                            意思是将设备改为可读可写;</li>
-</ol>
-<h1 id="安装apk"><a href="#安装apk" class="headerlink" title="安装apk"></a>安装apk</h1><p>有两种方式：</p>
-<ol>
-<li>push<br>查看盒子的目录/system/app：1.输入adb shell;2.输入ls /system/app<br>发现指定目录下为文件夹，随便打开一个文件夹，可发现通常结构为application/application.apk<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E5%AE%89%E8%A3%85apk.png" alt="安装apk"></li>
-</ol>
-<p>创建文件夹 mkdir /system/app/应用名称<br>如果创建失败，可以先输入命令行 mount -o remount /system，再创建文件夹<br>将要安装的应用push到盒子指定目录下 adb push C:\XX.apk /system/app/XX/<br>重启，可在我的应用里找到新安装的应用。（/(ㄒoㄒ)/~~ 如果找不到，只能通过命令行手动启动了，方法见下文）</p>
-<ol>
-<li>install<br>adb install  C:\XX.apk      安装</li>
-</ol>
-<blockquote>
-<p>异常：daemon not running. starting it now on port 5037 *<br>解决方案：<a href="http://blog.csdn.net/xishuluoye/article/details/17880663" target="_blank" rel="external">http://blog.csdn.net/xishuluoye/article/details/17880663</a></p>
+        <blockquote>
+<p>虽然很花时间，但每一秒认真投入其中的时间，将来都会10倍的回报你。事先没有想清楚的，最后一定会报复你的。</p>
 </blockquote>
-<p>若需要再次安装：<br>有两种方式：</p>
-<ol>
-<li>adb install -r C:\XX.apk /system/app     （覆盖安装）</li>
-<li>adb uninstall 包名  （卸载后，再次安装）</li>
-</ol>
-<h1 id="手动启动"><a href="#手动启动" class="headerlink" title="手动启动"></a>手动启动</h1><p>adb shell<br>am start -n 包名/类名</p>
-<h1 id="查看盒子目录"><a href="#查看盒子目录" class="headerlink" title="查看盒子目录"></a>查看盒子目录</h1><p>adb shell<br>cd 路径<br>ls<br>可查看盒子指定路径下的文件夹</p>
-<h1 id="其他操作命令"><a href="#其他操作命令" class="headerlink" title="其他操作命令"></a>其他操作命令</h1><p>ctrl+c //退出</p>
-<p>rm -f 文件名  //删除某个文件</p>
-<p>adb logcat -v time -&gt;E:\a.log   //抓log</p>
-<p>adb shell tcpdump -n -s 0 -i eth0 -vv -w /data/data/xxx.pcap       //抓网络包</p>
-<p>adb disconnect ip    //解绑设备</p>
-<p>adb reboot  //重启设备<br>adb shell pm clear 包名   //退出应用</p>
+<a id="more"></a>
+<p>任何一个产品功能逻辑，都分为主逻辑和异常逻辑。产品经理往往愿意花费大量时间思考产品主逻辑，却忽视异常逻辑。做产品经理不思考异常逻辑，类似商人做生意不考虑风险，妥妥的盲目自信。</p>
+<p>异常可以分为以下几类：<br>1.网络异常；<br>断网、网络状况不好、从wifi切换至2G/3G的提醒</p>
+<p>2.非接口异常产生的；<br>用户操作不符合要求时的反馈。</p>
+<p>3.接口异常产生的。<br>服务器崩溃</p>
+<p>4.中断任务<br>自动关机、应用切换至后台、退出应用、退出页面</p>
+<p>5.无数据</p>
+<p>异常的处理可以分为：<br>1.严重错误，影响下一步的使用：<br>返回上一层页面，错误提示。<br>2.单个功能错误，不影响其他功能使用：<br>错误提示（黑色半透明背景，2S自动消失提示）</p>
+<p>常用异常提示定义<br>1、网络类的：<br>文案：网络未连接，请检查网络设置<br>按钮：点击重试<br>2、非接口异常产生的：<br>（限制条件）<br>操作成功<br>获取节目鉴权信息请求失败！<br>麦克风已开启<br>麦克风已关闭<br>已开启自由讨论模式<br>当前会议已经解除锁定<br>3、接口异常产生的：<br>定义：<br>服务异常：【接口文档错误定义的字段】<br>案例：<br>马赛克服务异常:【马赛克服务器播发失败！】<br>马赛克服务异常:【此会场摄像头没有加入到马赛克服务器中！】</p>
+<p>异常处理：<br>1、严重错误，影响下一步的使用<br>返回上一层页面，错误提示（需要有确认按钮）<br>2、单个功能错误<br>错误提示（黑色半透明背景，2S自动消失提示）</p>
 
       
     </div>
@@ -401,7 +382,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/工具系列/" rel="tag"># 工具系列</a>
+            <a href="/tags/产品经理/" rel="tag"># 产品经理</a>
           
         </div>
       
@@ -414,8 +395,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/20/数据驱动下的产品决策/" rel="next" title="数据驱动下的产品决策">
-                <i class="fa fa-chevron-left"></i> 数据驱动下的产品决策
+              <a href="/2017/10/24/为了世界和平，请认真阅读本文/" rel="next" title="为了世界和平，请认真阅读本文">
+                <i class="fa fa-chevron-left"></i> 为了世界和平，请认真阅读本文
               </a>
             
           </div>
@@ -423,10 +404,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/21/初级产品经理的工作流程/" rel="prev" title="产品系列01-初级产品经理的工作流程">
-                产品系列01-初级产品经理的工作流程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -473,17 +450,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/touxiang.png"
@@ -545,22 +513,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装adb"><span class="nav-number">1.</span> <span class="nav-text">安装adb</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过IP连接设备"><span class="nav-number">2.</span> <span class="nav-text">通过IP连接设备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装apk"><span class="nav-number">3.</span> <span class="nav-text">安装apk</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#手动启动"><span class="nav-number">4.</span> <span class="nav-text">手动启动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看盒子目录"><span class="nav-number">5.</span> <span class="nav-text">查看盒子目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他操作命令"><span class="nav-number">6.</span> <span class="nav-text">其他操作命令</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
