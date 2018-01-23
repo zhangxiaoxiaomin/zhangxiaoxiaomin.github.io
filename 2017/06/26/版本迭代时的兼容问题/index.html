@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="最近给产品来了几次大换血，业务逻辑改动比较大，最后导致现在需要同时维护5个版本，时间长了自己都会蒙圈。是时候谈谈版本迭代过程中的兼容性问题了，共勉。">
+<meta name="description" content="关于版本管理这件事，最近我是真的遇到困难了。我在负责版本管理与发布工作，每一次的版本迭代，我们都会要求客户前、终端程序同步更换，也就是说升级的后台兼容不了旧有的终端页面。今天和开发就这件事讨论了一下，以下是一些心得，共勉。">
 <meta name="keywords" content="产品方法论">
 <meta property="og:type" content="article">
-<meta property="og:title" content="版本迭代时的兼容问题">
+<meta property="og:title" content="关于版本兼容性的一点思考">
 <meta property="og:url" content="http://yoursite.com/2017/06/26/版本迭代时的兼容问题/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="最近给产品来了几次大换血，业务逻辑改动比较大，最后导致现在需要同时维护5个版本，时间长了自己都会蒙圈。是时候谈谈版本迭代过程中的兼容性问题了，共勉。">
-<meta property="og:updated_time" content="2017-06-26T10:00:42.583Z">
+<meta property="og:description" content="关于版本管理这件事，最近我是真的遇到困难了。我在负责版本管理与发布工作，每一次的版本迭代，我们都会要求客户前、终端程序同步更换，也就是说升级的后台兼容不了旧有的终端页面。今天和开发就这件事讨论了一下，以下是一些心得，共勉。">
+<meta property="og:updated_time" content="2018-01-23T03:36:08.237Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="版本迭代时的兼容问题">
-<meta name="twitter:description" content="最近给产品来了几次大换血，业务逻辑改动比较大，最后导致现在需要同时维护5个版本，时间长了自己都会蒙圈。是时候谈谈版本迭代过程中的兼容性问题了，共勉。">
+<meta name="twitter:title" content="关于版本兼容性的一点思考">
+<meta name="twitter:description" content="关于版本管理这件事，最近我是真的遇到困难了。我在负责版本管理与发布工作，每一次的版本迭代，我们都会要求客户前、终端程序同步更换，也就是说升级的后台兼容不了旧有的终端页面。今天和开发就这件事讨论了一下，以下是一些心得，共勉。">
 
 
 
@@ -137,7 +137,7 @@
 
 
 
-  <title>版本迭代时的兼容问题 | Hexo</title>
+  <title>关于版本兼容性的一点思考 | Hexo</title>
   
 
 
@@ -293,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">版本迭代时的兼容问题</h1>
+          <h1 class="post-title" itemprop="name headline">关于版本兼容性的一点思考</h1>
         
 
         <div class="post-meta">
@@ -362,15 +362,26 @@
       
 
       
-        <p>最近给产品来了几次大换血，业务逻辑改动比较大，最后导致现在需要同时维护5个版本，时间长了自己都会蒙圈。是时候谈谈版本迭代过程中的兼容性问题了，共勉。<br><a id="more"></a></p>
+        <p>关于版本管理这件事，最近我是真的遇到困难了。我在负责版本管理与发布工作，每一次的版本迭代，我们都会要求客户前、终端程序同步更换，也就是说升级的后台兼容不了旧有的终端页面。今天和开发就这件事讨论了一下，以下是一些心得，共勉。</p>
+<a id="more"></a>
+<p>故事要从，我和开发人员的一次真诚讨论（撕）开始说起……<br>角色说明：<br>我 产品经理<br>小Z 后台开发人员</p>
+<blockquote>
+<p>我：“Hi,小Z同学，请教件事情哈。以后咱们扩展接口的时候，是否可以保留旧的返回数据呢？”<br>小Z同学：“兼容上一个版本的返回值，不一定能做……”<br>我：“例如这次你扩展了3.26接口，删掉了几个返回值，所有的终端页面就得全部重新对接了。”<br>小Z同学：“重新对接很简单的嘛。如果不删掉旧的返回值，数据越来越多，以后交接任务就没人看的懂了。”<br>我：“你说的也有道理哇，那怎么在数据冗余与兼容性之间做平衡呢？”<br>小Z同学：“你弄懂之后告诉我哈……”<br>我：“……”</p>
+</blockquote>
+<p>我的思考：我们手机上使用的app，很长时间不更新，也不影响正常使用。那么这些互联网公司，是采用什么策略呢。<br>带着这个问题，我请教了大学同学大K。大K在互联网企业负责一款教育类app的开发工作，他应该能解答我的这个问题。</p>
+<blockquote>
+<p>我：“大K大神，有个问题请教。关于版本兼容，……（此处省去若干字）”<br>大K：“这第一点嘛，后台返回的数据定义为JSON，约定好对于JSON中的属性，只增不减。”<br>我：“只增不减，那数据不就会越来越多吗？”<br>大K：“是的，数据越来越多，会带来两个问题，1.耗费网络资源；2.不利于产品维护。”<br>我：“这就是我的疑问，快给我指条明路。”<br>大K:“如果为了解决数据越来越多带来的问题，需要对旧数据进行清理，就要进行重大升级，强制用户更新。”<br>我：“也就是说，产品迭代以兼容旧版本为第一目标；当返回数据越来越多需要清理时，对产品进行重大升级，此时只能强制用户更新。”<br>大K：“是的”</p>
+</blockquote>
+<p>总结：</p>
 <ol>
 <li>数据库的设计要有前瞻性，这样在后期做迭代的时候不必伤筋动骨；</li>
 <li>接口根据版本进行分类，例如/api/1.0/user/register;/api/2.0/user/register；</li>
-<li>若需要新增参数，加默认值兼容旧版本；</li>
+<li>若需要新增参数，加默认值兼容旧版本； </li>
 <li>涉及到与旧数据关联不大的新数据，新建数据表做一定的冗余即可；（开闭原则：对新增开放；对修改关闭）；</li>
 <li>监控各版本的API访问情况，对于陈旧的API废弃；</li>
 <li>对不能兼容的API版本进行报错处理（强制更新）；</li>
 </ol>
+<p><a href="https://www.jianshu.com/p/74c952cd5cd2" target="_blank" rel="external">app版本升级的多种方式</a></p>
 
       
     </div>
@@ -510,7 +521,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
