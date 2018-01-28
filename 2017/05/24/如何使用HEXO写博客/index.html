@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/24/如何使用HEXO写博客/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前置条件： 安装git 安装nodejs 安装hexo 更换hexo主题  本文将说明如何使用hexo写一篇新博客。">
-<meta property="og:updated_time" content="2018-01-28T07:18:52.624Z">
+<meta property="og:updated_time" content="2018-01-28T07:22:58.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工具系列00-如何使用HEXO写博客">
 <meta name="twitter:description" content="前置条件： 安装git 安装nodejs 安装hexo 更换hexo主题  本文将说明如何使用hexo写一篇新博客。">
@@ -384,7 +384,11 @@
 <p>随便写点什么之后保存。</p>
 <h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><p><code>hexo g</code></p>
 <h3 id="页面预览"><a href="#页面预览" class="headerlink" title="页面预览"></a>页面预览</h3><p><code>hexo s</code><br>访问<a href="http://localhost:4000/试试吧！" target="_blank" rel="external">http://localhost:4000/试试吧！</a></p>
-<h3 id="上传git"><a href="#上传git" class="headerlink" title="上传git"></a>上传git</h3><p><code>hexo d</code><br>访问 <a href="http://git用户名.github.io" target="_blank" rel="external">http://git用户名.github.io</a> 看看效果吧。<br>上传至git时，每次都要输入git账户名和密码，很麻烦。输入下面这行命令，可以记录账户名和密码，下次再上传时，就不用输入了。<br><code>git config --global credential.helper store</code></p>
+<h3 id="上传git"><a href="#上传git" class="headerlink" title="上传git"></a>上传git</h3><p><code>hexo d</code><br>访问 <a href="http://git用户名.github.io" target="_blank" rel="external">http://git用户名.github.io</a> 看看效果吧。<br>上传至git时，每次都要输入git账户名和密码，很麻烦。解决办法如下，只需要两步：</p>
+<ol>
+<li>输入命令：<br><code>git config --global credential.helper store</code></li>
+<li>输入 <code>hexo d</code><br>输入git账户名和密码<br>ok。</li>
+</ol>
 
       
     </div>
