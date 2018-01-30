@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="UML," />
+  <meta name="keywords" content="UML,软件过程," />
 
 
 
@@ -93,14 +93,19 @@
 
 
 
-<meta name="keywords" content="UML">
+<meta name="description" content="写在前面的话为什么要学UML？  我的困境：  从事软件行业，对软件过程的理解似是而非。迫切需要对软件的生命周期有深刻的认识。 作为产品策划人，做产品喜欢“拍脑袋”，想到哪儿就是哪儿，用户需求与最终结果之间不具有可追溯性。 产品需求文档写了不少，但不能很清晰地界定文档中各种图的使用场景，例如：活动图的作用是什么？什么场景下使用？ 做出来的产品逻辑漏洞百出，是否有方法减少？   工作中面临的上述问题">
+<meta name="keywords" content="UML,软件过程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UML系列01-背景介绍">
 <meta property="og:url" content="http://yoursite.com/2018/01/17/UML系列01-背景介绍/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:updated_time" content="2018-01-23T05:52:08.990Z">
+<meta property="og:description" content="写在前面的话为什么要学UML？  我的困境：  从事软件行业，对软件过程的理解似是而非。迫切需要对软件的生命周期有深刻的认识。 作为产品策划人，做产品喜欢“拍脑袋”，想到哪儿就是哪儿，用户需求与最终结果之间不具有可追溯性。 产品需求文档写了不少，但不能很清晰地界定文档中各种图的使用场景，例如：活动图的作用是什么？什么场景下使用？ 做出来的产品逻辑漏洞百出，是否有方法减少？   工作中面临的上述问题">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML01.PNG">
+<meta property="og:updated_time" content="2018-01-30T04:09:27.392Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UML系列01-背景介绍">
+<meta name="twitter:description" content="写在前面的话为什么要学UML？  我的困境：  从事软件行业，对软件过程的理解似是而非。迫切需要对软件的生命周期有深刻的认识。 作为产品策划人，做产品喜欢“拍脑袋”，想到哪儿就是哪儿，用户需求与最终结果之间不具有可追溯性。 产品需求文档写了不少，但不能很清晰地界定文档中各种图的使用场景，例如：活动图的作用是什么？什么场景下使用？ 做出来的产品逻辑漏洞百出，是否有方法减少？   工作中面临的上述问题">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML01.PNG">
 
 
 
@@ -359,7 +364,42 @@
       
 
       
-        <a id="more"></a>
+        <h2 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h2><p>为什么要学UML？</p>
+<blockquote>
+<p>我的困境：</p>
+<ol>
+<li>从事软件行业，对软件过程的理解似是而非。迫切需要对软件的生命周期有深刻的认识。</li>
+<li>作为产品策划人，做产品喜欢“拍脑袋”，想到哪儿就是哪儿，用户需求与最终结果之间不具有可追溯性。</li>
+<li>产品需求文档写了不少，但不能很清晰地界定文档中各种图的使用场景，例如：活动图的作用是什么？什么场景下使用？</li>
+<li>做出来的产品逻辑漏洞百出，是否有方法减少？</li>
+</ol>
+</blockquote>
+<p>工作中面临的上述问题，是驱使我决心系统学习UML的动力。</p>
+<a id="more"></a>
+<p>本文将回答以下几个问题：</p>
+<ol>
+<li>什么是面向对象？</li>
+<li>RUP是什么？</li>
+<li>UML是什么？有什么用？</li>
+</ol>
+<h2 id="先说说面向对象思想"><a href="#先说说面向对象思想" class="headerlink" title="先说说面向对象思想"></a>先说说面向对象思想</h2><p>人类自从有思想依赖，就在不断探寻和认识自己所生活的这个世界，从本质上说，面向对象和面向过程都是人们认识这个世界的方法；而具体的技术，则是在采用这种方法认识世界的过程中被发明、总结和归纳出来的最佳实践。例如，面向过程的技术有结构化程序设计、DFD图、ER模型等，面向对象的技术有继承、封装、多态等。上述所有的技术都只是人们在采用不同的方法来认识和描述这个世界时，所采用的工具。</p>
+<p>面向对象之所以会兴起，是因为这种认识论能够帮助我们构造系统来解释越来越复杂的现实世界。面向对象方法将世界看作一个个相互独立的对象，相互之间并无因果关系，只有在某个外部力量的驱动下，对象之间才会依据某种规律相互传递信息。面向对象的思想比较符合人的思考模式，人、事、物、规则组成了这个世界。人对应参与者；事对应用例；物对应业务对象模型；规则对应业务场景和用例场景。</p>
+<blockquote>
+<p>举例说明：组长审核我的请假条。<br>主角：组长<br>用例：审核组员的请假条<br>实体：请假条<br>业务规则：具体的请假规则（例如：请假时间小于半小时，不予通过。） </p>
+</blockquote>
+<p>面向对象和面向过程的区别是什么？举个例子，刑警查案子，根据嫌疑人的脚印等线索，抽丝剥茧一步步还原事实真相，这是面向过程；刑警负责查案，法医负责化验，用面向对象的思想，刑警和法医原本是互无关系的，现在刑警获取到了一些证据需要法医帮忙化验，相当于此时受到外力的驱使，法医来配合化验并反馈相应的结果。（这个例子是我编的……）</p>
+<p>总之，面向对象和面向过程是两种认识世界的方法。要使用面向对象的方法对现实世界进行抽象建模，我们需要：</p>
+<ul>
+<li>一种把现实世界映射到对象世界的方法。</li>
+<li>一种从对象世界描述现实世界的方法。</li>
+<li>一种验证对象世界行为是否正确反映现实世界的方法。</li>
+</ul>
+<p>UML背后所<strong>代表的面向对象分析设计方法</strong>，正好可以解决这些问题。</p>
+<h2 id="UML是什么？"><a href="#UML是什么？" class="headerlink" title="UML是什么？"></a>UML是什么？</h2><p>UML是什么？UML又是如何解决上一小节中的问题呢？</p>
+<p>UML是统一建模语言（Unified Modeling Language）的缩写，于1997年1月成为一种标准建模语言。面向对象是从编程领域兴起并逐步扩展到软件设计领域，虽然解决了设计到开发的困难，随着应用程序的进一步复杂，需求分析成为比设计更重要的问题。人们虽然可以写出漂亮的代码，却常常被客户指责不符合需求而推翻重来。于是面向对象分析（OOA）方法开始走上舞台，其中最为重要的三种方法就是UML的前身：1.Booch；2.OOSE、Martin/Odell；3.OMT、Shalaer/Mellor，后来将这三种方法统一，逐渐演化为UML。但要注意<strong>UML是语言，不是方法</strong>。</p>
+<p>下面这张图是使用UML进行抽象建模的过程，可以看到从现实世界到设计模型，所有的步骤是可追溯的。<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML01.PNG" alt="建模"></p>
+<p>参考阅读：<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em><br>          <em><a href="https://book.douban.com/subject/10511247/" target="_blank" rel="external">《火球:UML大战需求分析》</a></em></p>
+
       
     </div>
 
@@ -390,6 +430,8 @@
           
             <a href="/tags/UML/" rel="tag"># UML</a>
           
+            <a href="/tags/软件过程/" rel="tag"># 软件过程</a>
+          
         </div>
       
 
@@ -401,8 +443,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/17/数据驱动下的产品决策/" rel="next" title="数据驱动下的产品决策">
-                <i class="fa fa-chevron-left"></i> 数据驱动下的产品决策
+              <a href="/2017/10/31/产品策划之异常处理/" rel="next" title="产品策划之异常处理">
+                <i class="fa fa-chevron-left"></i> 产品策划之异常处理
               </a>
             
           </div>
@@ -411,8 +453,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/17/常用markdown语法/" rel="prev" title="常用markdown语法">
-                常用markdown语法 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/17/数据驱动下的产品决策/" rel="prev" title="数据驱动下的产品决策">
+                数据驱动下的产品决策 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -460,8 +502,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/touxiang.png"
@@ -498,7 +549,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -523,6 +574,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面的话"><span class="nav-number">1.</span> <span class="nav-text">写在前面的话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先说说面向对象思想"><span class="nav-number">2.</span> <span class="nav-text">先说说面向对象思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UML是什么？"><span class="nav-number">3.</span> <span class="nav-text">UML是什么？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
