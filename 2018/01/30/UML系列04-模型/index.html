@@ -101,9 +101,9 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前面两篇博客总结了UML的元素、视图，就好比已经掌握了词汇与语法，接下来的建模就是真正写文章了。写成什么文章是由软件过程所确定的软件生命周期来决定的。因此，要建立什么样的模型，首先要确定的是该项目我们要采用什么样的生命周期。本篇博客参考《大象-Thinking in UML》书中以RUP为例来进行讲解，因此涉及的所有模型是服务于RUP的各个生命周期的。">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E6%A6%82%E5%BF%B5%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E7%B3%BB%E7%BB%9F%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png">
-<meta property="og:updated_time" content="2018-01-30T08:32:05.969Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E6%A6%82%E5%BF%B5%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png">
+<meta property="og:updated_time" content="2018-01-30T09:39:12.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UML系列04-模型">
 <meta name="twitter:description" content="前面两篇博客总结了UML的元素、视图，就好比已经掌握了词汇与语法，接下来的建模就是真正写文章了。写成什么文章是由软件过程所确定的软件生命周期来决定的。因此，要建立什么样的模型，首先要确定的是该项目我们要采用什么样的生命周期。本篇博客参考《大象-Thinking in UML》书中以RUP为例来进行讲解，因此涉及的所有模型是服务于RUP的各个生命周期的。">
@@ -369,9 +369,16 @@
         <p>前面两篇博客总结了UML的元素、视图，就好比已经掌握了词汇与语法，接下来的建模就是真正写文章了。写成什么文章是由软件过程所确定的软件生命周期来决定的。因此，要建立什么样的模型，首先要确定的是该项目我们要采用什么样的生命周期。<br>本篇博客参考<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em>书中以RUP为例来进行讲解，因此涉及的所有模型是服务于RUP的各个生命周期的。</p>
 <a id="more"></a>
 <h2 id="1-业务用例模型"><a href="#1-业务用例模型" class="headerlink" title="1. 业务用例模型"></a>1. 业务用例模型</h2><p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png" alt="业务用例模型"></p>
-<h2 id="2-概念用例模型"><a href="#2-概念用例模型" class="headerlink" title="2. 概念用例模型"></a>2. 概念用例模型</h2><p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E6%A6%82%E5%BF%B5%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png" alt="概念用例模型"></p>
-<h2 id="3-系统用例模型"><a href="#3-系统用例模型" class="headerlink" title="3. 系统用例模型"></a>3. 系统用例模型</h2><p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E7%B3%BB%E7%BB%9F%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png" alt="系统用例模型"></p>
-<h2 id="4-领域模型"><a href="#4-领域模型" class="headerlink" title="4. 领域模型"></a>4. 领域模型</h2><p>使用场景：<br>为非交互密集型的软件建立领域模型；<br>为交互密集型软件中交叉和重叠的对象建立领域模型。</p>
+<h2 id="2-系统用例模型"><a href="#2-系统用例模型" class="headerlink" title="2. 系统用例模型"></a>2. 系统用例模型</h2><p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E7%B3%BB%E7%BB%9F%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png" alt="系统用例模型"></p>
+<h2 id="3-领域模型"><a href="#3-领域模型" class="headerlink" title="3. 领域模型"></a>3. 领域模型</h2><p>使用场景：<br>为非交互密集型的软件建立领域模型；<br>为交互密集型软件中交叉和重叠的对象建立领域模型。</p>
+<h2 id="4-概念用例模型"><a href="#4-概念用例模型" class="headerlink" title="4. 概念用例模型"></a>4. 概念用例模型</h2><p>概念用例模型是业务用例模型到系统用例模型的过渡模型，<em>非必要的</em>。一些罗列了一些使用场景：</p>
+<ol>
+<li>业务用例力度较大，不容易过渡到粒度较小的系统用例；</li>
+<li>有跨业务用例的业务流程存在；</li>
+<li>有超过7、8个泳道存在；</li>
+<li>某个业务用例场景过于复杂，有跨业务用例的业务流程存在。</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04%E6%A6%82%E5%BF%B5%E7%94%A8%E4%BE%8B%E6%A8%A1%E5%9E%8B.png" alt="概念用例模型"></p>
 <p>参考阅读：<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em><br>          <em><a href="https://book.douban.com/subject/10511247/" target="_blank" rel="external">《火球:UML大战需求分析》</a></em></p>
 
       
@@ -426,6 +433,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/30/需求分析系列01-战略分析/" rel="prev" title="需求分析系列01-战略分析">
+                需求分析系列01-战略分析 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -497,7 +508,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -519,7 +530,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -554,7 +565,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-业务用例模型"><span class="nav-number">1.</span> <span class="nav-text">1. 业务用例模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-概念用例模型"><span class="nav-number">2.</span> <span class="nav-text">2. 概念用例模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-系统用例模型"><span class="nav-number">3.</span> <span class="nav-text">3. 系统用例模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-领域模型"><span class="nav-number">4.</span> <span class="nav-text">4. 领域模型</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-业务用例模型"><span class="nav-number">1.</span> <span class="nav-text">1. 业务用例模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-系统用例模型"><span class="nav-number">2.</span> <span class="nav-text">2. 系统用例模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-领域模型"><span class="nav-number">3.</span> <span class="nav-text">3. 领域模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-概念用例模型"><span class="nav-number">4.</span> <span class="nav-text">4. 概念用例模型</span></a></li></ol></div>
             
 
           </div>
