@@ -93,19 +93,19 @@
 
 
 
-<meta name="description" content="参考阅读：《大象-Thinking in UML》          《火球:UML大战需求分析》">
+<meta name="description" content="前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，边界定义最重要，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。">
 <meta name="keywords" content="UML,软件过程,需求分析">
 <meta property="og:type" content="article">
-<meta property="og:title" content="需求分析系列03-定义边界">
+<meta property="og:title" content="需求分析系列03-定义边界、发现主角、获取业务用例">
 <meta property="og:url" content="http://yoursite.com/2018/01/30/需求分析系列03-定义边界/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="参考阅读：《大象-Thinking in UML》          《火球:UML大战需求分析》">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%9003%E5%AE%9A%E4%B9%89%E8%BE%B9%E7%95%8C.png">
-<meta property="og:updated_time" content="2018-01-31T08:10:02.376Z">
+<meta property="og:description" content="前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，边界定义最重要，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML03-%E8%8E%B7%E5%8F%96%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B.png">
+<meta property="og:updated_time" content="2018-02-02T05:59:30.707Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="需求分析系列03-定义边界">
-<meta name="twitter:description" content="参考阅读：《大象-Thinking in UML》          《火球:UML大战需求分析》">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%9003%E5%AE%9A%E4%B9%89%E8%BE%B9%E7%95%8C.png">
+<meta name="twitter:title" content="需求分析系列03-定义边界、发现主角、获取业务用例">
+<meta name="twitter:description" content="前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，边界定义最重要，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML03-%E8%8E%B7%E5%8F%96%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B.png">
 
 
 
@@ -139,7 +139,7 @@
 
 
 
-  <title>需求分析系列03-定义边界 | Hexo</title>
+  <title>需求分析系列03-定义边界、发现主角、获取业务用例 | Hexo</title>
   
 
 
@@ -295,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">需求分析系列03-定义边界</h1>
+          <h1 class="post-title" itemprop="name headline">需求分析系列03-定义边界、发现主角、获取业务用例</h1>
         
 
         <div class="post-meta">
@@ -364,7 +364,20 @@
       
 
       
-        <p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%9003%E5%AE%9A%E4%B9%89%E8%BE%B9%E7%95%8C.png" alt="定义边界"></p>
+        <p>前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，<strong>边界定义最重要</strong>，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。</p>
+<a id="more"></a>
+<h3 id="定义边界"><a href="#定义边界" class="headerlink" title="定义边界"></a>定义边界</h3><p>根据上一个环节中整理的业务目标，可以很容易推导出边界来。例如根据业务目标“会议资料规范管理；”，我们可以定义出一个命名为“会议资料管理”的业务边界。但是不是什么时候以业务目标为依据划分边界都是有效的。例如，如果准备开发的系统是以计算、控制、自动化等为主要目的的，似乎就很难找出明确的业务目标。但是这个思路仍然是可行的，即时一个系统没有明确的业务目标，但是一定会有明确的功能目标，例如手机系统其功能目标是拨打电话、接听电话、媒体库等，也可以用它们来建立边界。</p>
+<h3 id="发现主角"><a href="#发现主角" class="headerlink" title="发现主角"></a>发现主角</h3><p>每一个业务目标都可以用来定义边界，每个边界有不同的涉众参与，也会有不同的用例出现。边界外的涉众叫做主角，边界内涉众的叫做业务工人。一旦边界确定了，则在边界外与该边界有利益关系的一切东西，不论它是人、物或者系统，都是业务主角。<br>如何发现主角？首先，根据涉众分析报告，我们得到了涉众列表；其次，根据边界的定义，我们可以找到那些站在边界外的涉众。<em>只有那些与系统直接交互的涉众才能被称为业务主角。</em><br>如果在分析过程中发现有些业务主角找不到对应的边界，或者业务主角的一些要求没地方放置，那么应该回头审视边界分析、主角定义是否完整。</p>
+<h3 id="获取业务用例"><a href="#获取业务用例" class="headerlink" title="获取业务用例"></a>获取业务用例</h3><p>业务主角站在边界之外，背负则涉众赋予的业务目标。主角说：“我要做这件事，做完后我能得到什么；我还要做那件事，这样就能达到什么目的……当这些事都做完了，我就能建立一个文明。”对系统来说，每一件事就是一个业务用例，每个业务用例体现了业务主角的一个系统期望，而所有的这种期望则完成边界所代表的业务目标。</p>
+<p>分析出有什么角色将会使用本系统，用用例图描绘出系统的功能。业务用例必须是以达到业务主角的完整业务目标为标准，而不能以实现业务主角业务目标的步骤为标准。</p>
+<p>获取业务用例的方法有很多：1.公司的培训手册、业务流程指南等文件；2.业务主角访谈。可以通过下列问题引导业务主角代表说出他们的业务需求：</p>
+<ul>
+<li>您对系统有什么期望？</li>
+<li>您打算用这个系统做些什么事情？</li>
+<li>您做这件事情的目的是什么？</li>
+<li>您做完这件事希望有什么样的结果？</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML03-%E8%8E%B7%E5%8F%96%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B.png" alt="定义边界、发现主角、确定业务用例"></p>
 <p>参考阅读：<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em><br>          <em><a href="https://book.douban.com/subject/10511247/" target="_blank" rel="external">《火球:UML大战需求分析》</a></em></p>
 
       
@@ -422,8 +435,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/30/需求分析系列04-发现主角/" rel="prev" title="需求分析系列04-发现主角">
-                需求分析系列04-发现主角 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/30/需求分析系列06-业务建模/" rel="prev" title="需求分析系列06-业务建模">
+                需求分析系列06-业务建模 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -471,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/touxiang.png"
@@ -487,7 +509,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">39</span>
+                <span class="site-state-item-count">37</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -534,6 +556,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义边界"><span class="nav-number">1.</span> <span class="nav-text">定义边界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发现主角"><span class="nav-number">2.</span> <span class="nav-text">发现主角</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取业务用例"><span class="nav-number">3.</span> <span class="nav-text">获取业务用例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
