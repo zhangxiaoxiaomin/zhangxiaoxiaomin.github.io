@@ -93,16 +93,24 @@
 
 
 
+<meta name="description" content="一个完整的业务模型包括业务用例场景、业务用例规约、业务用例实现场景、业务用例视图、业务用例实现视图、业务对象模型、业务规则。其中业务用例场景、业务用例规约、业务用例实现场景是重点。">
 <meta name="keywords" content="UML,软件过程,需求分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="需求分析系列04-业务建模">
 <meta property="og:url" content="http://yoursite.com/2018/01/30/需求分析系列04-业务建模/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一个完整的业务模型包括业务用例场景、业务用例规约、业务用例实现场景、业务用例视图、业务用例实现视图、业务对象模型、业务规则。其中业务用例场景、业务用例规约、业务用例实现场景是重点。">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E4%B8%9A%E5%8A%A1%E6%B4%BB%E5%8A%A8%E5%9B%BE.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E7%8A%B6%E6%80%81%E5%9B%BE.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E9%A1%BA%E5%BA%8F%E5%9B%BE.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E7%94%A8%E4%BE%8B%E8%A7%84%E7%BA%A6.PNG">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E6%B4%BB%E5%8A%A8%E5%9B%BE.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%9006%E4%B8%9A%E5%8A%A1%E5%BB%BA%E6%A8%A1.png">
-<meta property="og:updated_time" content="2018-02-02T06:02:27.548Z">
+<meta property="og:updated_time" content="2018-02-05T04:01:41.579Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="需求分析系列04-业务建模">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%9006%E4%B8%9A%E5%8A%A1%E5%BB%BA%E6%A8%A1.png">
+<meta name="twitter:description" content="一个完整的业务模型包括业务用例场景、业务用例规约、业务用例实现场景、业务用例视图、业务用例实现视图、业务对象模型、业务规则。其中业务用例场景、业务用例规约、业务用例实现场景是重点。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E4%B8%9A%E5%8A%A1%E6%B4%BB%E5%8A%A8%E5%9B%BE.png">
 
 
 
@@ -361,7 +369,23 @@
       
 
       
-        <p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%9006%E4%B8%9A%E5%8A%A1%E5%BB%BA%E6%A8%A1.png" alt="业务建模"></p>
+        <p>一个完整的业务模型包括业务用例场景、业务用例规约、业务用例实现场景、业务用例视图、业务用例实现视图、业务对象模型、业务规则。其中<strong>业务用例场景、业务用例规约、业务用例实现场景</strong>是重点。<br><a id="more"></a></p>
+<h3 id="业务用例场景（图像）"><a href="#业务用例场景（图像）" class="headerlink" title="业务用例场景（图像）"></a>业务用例场景（图像）</h3><p>业务用例场景用于描述该业务用例在实际业务中是如何做的。在描述业务用例场景时，不能带有“设计”思想在里面，或者“抽象”、“优化”业务过程，它必须和客户认可的实际业务执行一致。一个业务目标，可能对应有多个业务用例场景。例如，交手机费，通过支付宝充值和通过充值卡充值，虽然最终实现的目标一致，但是是两个业务用例场景。<br>绘制业务用例场景可以用活动图、顺序图、状态图等工具。不同的工具有其使用场景，为了描述清楚业务，可使用多种图，多角度进行分析。</p>
+<ul>
+<li>如果事情围绕某个东西展开，可以考虑用状态机图；否则使用活动图或顺序图。</li>
+<li>如果没有复杂的特殊流程，可考虑顺序图；顺序图表达的内容是业务主角或业务工人之间传递的是什么。</li>
+<li>如果有复杂的流程，可考虑活动图。活动图表达的内容是业务主角或业务工人做什么。</li>
+<li>如果流程过多，为了避免活动图过于庞大复杂，可考虑只画核心的、重要的分支，细微的、不太重要的分支通过注解来说明。</li>
+</ul>
+<p>活动图示例：<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E4%B8%9A%E5%8A%A1%E6%B4%BB%E5%8A%A8%E5%9B%BE.png" alt="活动图"></p>
+<p>状态图示例：<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E7%8A%B6%E6%80%81%E5%9B%BE.png" alt="状态图"></p>
+<p>顺序图示例：<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E9%A1%BA%E5%BA%8F%E5%9B%BE.png" alt="顺序图"></p>
+<h3 id="业务用例规约（文字）"><a href="#业务用例规约（文字）" class="headerlink" title="业务用例规约（文字）"></a>业务用例规约（文字）</h3><p>文字是图形的有力补充，图形虽然很直观、形象，但是一些细节性的内容还是需要用文字来说明。</p>
+<p>业务用例规约示例：<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E7%94%A8%E4%BE%8B%E8%A7%84%E7%BA%A6.PNG" alt="业务用例规约"></p>
+<h3 id="业务用例实现场景（？）"><a href="#业务用例实现场景（？）" class="headerlink" title="业务用例实现场景（？）"></a>业务用例实现场景（？）</h3><p>业务用例场景：用于说明业务是怎样执行的。<br>业务用例实现场景；用于说明如何通过人机交互来完成业务。</p>
+<p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E6%B4%BB%E5%8A%A8%E5%9B%BE.png" alt="活动图"></p>
+<p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%9006%E4%B8%9A%E5%8A%A1%E5%BB%BA%E6%A8%A1.png" alt="业务建模"></p>
+<p>参考阅读：<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em><br>          <em><a href="https://book.douban.com/subject/10511247/" target="_blank" rel="external">《火球:UML大战需求分析》</a></em></p>
 
       
     </div>
@@ -467,8 +491,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/touxiang.png"
@@ -530,6 +563,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务用例场景（图像）"><span class="nav-number">1.</span> <span class="nav-text">业务用例场景（图像）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#业务用例规约（文字）"><span class="nav-number">2.</span> <span class="nav-text">业务用例规约（文字）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#业务用例实现场景（？）"><span class="nav-number">3.</span> <span class="nav-text">业务用例实现场景（？）</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
