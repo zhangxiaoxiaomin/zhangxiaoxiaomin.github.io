@@ -1,0 +1,766 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="复盘 - 能力," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="作了半年的产品汪，工作的每一天都很新鲜，每天都是收获满满。今天听同事分享了一些做产品的经验，很受用。也开始反思自己，应该多多思考、记录工作中做得好与做得不好的事情。做得好的事情值得总结，因为下次也许可以做得更好；做得不好的事情也不要羞于见人，找到犯错的原因，杜绝错误再次发生，同时警示自己力争少犯错误或不犯大的错误。">
+<meta name="keywords" content="复盘 - 能力">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品的那些事儿系列03-关于产品经理的能力">
+<meta property="og:url" content="http://yoursite.com/2017/08/25/15-产品那些事儿03/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="作了半年的产品汪，工作的每一天都很新鲜，每天都是收获满满。今天听同事分享了一些做产品的经验，很受用。也开始反思自己，应该多多思考、记录工作中做得好与做得不好的事情。做得好的事情值得总结，因为下次也许可以做得更好；做得不好的事情也不要羞于见人，找到犯错的原因，杜绝错误再次发生，同时警示自己力争少犯错误或不犯大的错误。">
+<meta property="og:updated_time" content="2018-02-12T02:01:59.239Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="产品的那些事儿系列03-关于产品经理的能力">
+<meta name="twitter:description" content="作了半年的产品汪，工作的每一天都很新鲜，每天都是收获满满。今天听同事分享了一些做产品的经验，很受用。也开始反思自己，应该多多思考、记录工作中做得好与做得不好的事情。做得好的事情值得总结，因为下次也许可以做得更好；做得不好的事情也不要羞于见人，找到犯错的原因，杜绝错误再次发生，同时警示自己力争少犯错误或不犯大的错误。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/08/25/15-产品那些事儿03/"/>
+
+
+
+
+
+  <title>产品的那些事儿系列03-关于产品经理的能力 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/15-产品那些事儿03/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangxiaoxiaomin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品的那些事儿系列03-关于产品经理的能力</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T18:32:57+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作复盘/" itemprop="url" rel="index">
+                    <span itemprop="name">工作复盘</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>作了半年的产品汪，工作的每一天都很新鲜，每天都是收获满满。今天听同事分享了一些做产品的经验，很受用。也开始反思自己，应该多多思考、记录工作中做得好与做得不好的事情。做得好的事情值得总结，因为下次也许可以做得更好；做得不好的事情也不要羞于见人，找到犯错的原因，杜绝错误再次发生，同时警示自己力争少犯错误或不犯大的错误。<br><a id="more"></a></p>
+<h1 id="产品经理需要关注的几个点"><a href="#产品经理需要关注的几个点" class="headerlink" title="产品经理需要关注的几个点"></a>产品经理需要关注的几个点</h1><h2 id="版本迭代计划"><a href="#版本迭代计划" class="headerlink" title="版本迭代计划"></a>版本迭代计划</h2><p>产品经理应该要清楚整个产品将要到达的形态，但是一口吃不成大胖子，产品经理也未必有能力在策划初期考虑全面。所以，通常情况下，产品仍然是在用边做边调整的方式在进行迭代。但是不管外部环境（市场）怎么改变，产品经理对这个产品的把握应该尽量全面。在此基础上根据产品和市场需要调整产品各版本的功能点。</p>
+<p>要注意的是，产品经理应该要具备版本亮点的提炼能力。<br>第一次领导问我：这个版本与上个版本有什么差异？<br>我是这么回答的：</p>
+<blockquote>
+<p>本版本的策划点有：<br>新增开启、关闭摄像头的功能；<br>新增我的会议：待参会议、历史会议详情；<br>新增通讯录（内部会场、外部会场）；</p>
+</blockquote>
+<p>被痛批一顿后，我是这么写的：</p>
+<blockquote>
+<p>本版本的策划点有：<br>手机端视频时更省流量；（新增开启、关闭摄像头的功能的目的是为了节省手机端流量；)<br>新增个人会议管理，如待参加会议列表与历史会议列表；<br>新增企业通讯录管理；</p>
+</blockquote>
+<p>（还有优化的空间:-D）提炼亮点的原因有几个目的：1、向领导汇报时，领导能清晰地知道产品进展；2、帮助市场、运营人员了解产品卖点；</p>
+<p>除了对产品整体形态的把握以外，产品经理也需要制定一个较为固定的产品迭代周期。例如两周迭代一个版本、三个月迭代一次，根据产品和市场的需要制定一个合适的迭代周期。例如互联网产品的迭代周期通常为1-2周进行小版本迭代，1-2个月进行大版本升级。但总的来说，迭代周期不宜超过三个月。</p>
+<h2 id="项目进展（市场反馈）"><a href="#项目进展（市场反馈）" class="headerlink" title="项目进展（市场反馈）"></a>项目进展（市场反馈）</h2><p>产品经理应该关注的第二个点是市场反馈。有一些人可能想着能一口气做个完美的产品，耗时很长，但是做出来的东西确很有可能并不完美，但此时市场机会也许就丢失了。如果你规划的产品需要耗时超过三个月甚至半年以上才能完成时，你应该当机立断对功能点进行优先级排序，将那部分不重要且耗时的功能点放后，抓紧时间尽快出版本。有一个初级产品后，立即投放市场搜集市场反馈。市场反馈是产品迭代的基础，如果只顾闷头苦干没有来自用户的反馈，很可能产品越做越偏，最后离用户想要的东西十万八千里，这是也没时间进行纠正了。因此，分阶段迭代产品，同步给市场，及时搜集用户的反馈，这样才能推动产品走上正轨。</p>
+<h2 id="技术研究点"><a href="#技术研究点" class="headerlink" title="技术研究点"></a>技术研究点</h2><p>逛产品群时，经常会看到一些话题“产品经理需要懂技术吗？”，对此我的看法是懂的越多越好。非计算机专业或技术出身的产品经理，也许在干产品之初对技术不了解（懵），但是千万不要畏惧，多问、多了解有助于对整个产品的把控。但是不懂技术也并不意味这干不好产品，能清晰地向技术人员表达自己的需求就行。<br>技术研究点是指那些需要耗费大量时间进行突破的难点，一旦被攻破这项技术马上会转变为产品的技术壁垒，拉开与同类产品的距离。正因为技术研究点需要耗费大量时间，所以需要提前进行攻关。</p>
+<h2 id="盈利模式"><a href="#盈利模式" class="headerlink" title="盈利模式"></a>盈利模式</h2><p>产品的盈利模式关乎产品的生死，卖软件还是卖服务。不同的盈利模式决定了产品不同的形态，产品经理应考虑产品的盈利模式。</p>
+<h1 id="产品经理的软实力"><a href="#产品经理的软实力" class="headerlink" title="产品经理的软实力"></a>产品经理的软实力</h1><h2 id="自信"><a href="#自信" class="headerlink" title="自信"></a>自信</h2><p>我是学软件工程出身的，也有一些开发经验。很多同事知道后的第一反应是“你怎么不去干开发？”（此处配上吃瓜群众惊讶脸），大概在他们眼里产品这个岗位是那些实在找不到工作的人最终的归宿。<br>产品经理之于产品就像导演之于电影，其它不说，首先这点就很像——电影圈里大家经常调侃导演并发出疑问，互联网圈里大家则经常调侃产品经理并发出疑问。<br>对一部电影来说，圈钱有制片人、剧本有编剧、演戏靠演员、拍摄靠摄影师和灯光师，似乎前面几个角色凑一起鼓捣鼓捣就能成一个电影。但是，为什么我们看到的电影里，导演的烙印会那么深呢。提到山楂树之恋、红高粱、满城尽带黄金甲，你马上会想到“这是老谋子的作品。”<br>导演（产品）负责哪些事？</p>
+<ol>
+<li>对要拍出一个什么电影心中有数。（对要做出一个什么产品心中有数。）</li>
+<li>参与电影场景乃至剧本的构思和创作。（参与产品的设计和构思。）</li>
+<li>有自己的判断力、品味和审美倾向。</li>
+<li>协调调度整个团队的资源和人才。<br>因为以上几个方面，所以产品经理需要从整体上对一个产品的质量负责，并且，也因此人们会认为产品是产品经理的作品。</li>
+</ol>
+<h2 id="把握核心业务"><a href="#把握核心业务" class="headerlink" title="把握核心业务"></a>把握核心业务</h2><p>围绕核心业务推导出核心功能，核心功能是指那些不能没有的功能点。很多PM想着要做出一个完美的产品，策划的产品非常庞大，可能要花上半年才能开发完。我比较认可的做法是优先做出一款能用的产品，在能用的基础上去完善功能、去优化用户体验。这样整个版本的迭代就会非常轻，也非常迅速。对开发人员和设计人员而言，压力也会减轻很多。</p>
+<h2 id="需求池"><a href="#需求池" class="headerlink" title="需求池"></a>需求池</h2><p>每个产品经理都应该有自己的需求池，用于随时记下工作中碰撞出的好点子。最开始的时候，我对这句话不以为然，直到进行第二次产品迭代时，突然发现之前想到的一些好点子竟然全部想不起来了。</p>
+<h2 id="全局观"><a href="#全局观" class="headerlink" title="全局观"></a>全局观</h2><p>作为产品经理应该有全局观，每天问自己一遍：<br>“现在产品做到什么样子了?”<br>“目前的主要问题是什么？”<br>“预计可以按时完成吗？”</p>
+<p>产品经理需要和整个产品团队的人密切合作，因此需要清晰了解什么是自己该做的。如果事事都管，最后一定会累死，效率还低。不属于自己处理范畴的事情果断提交相应的人做处理，应该自己处理的事情一定深入处理好、避免返工。</p>
+<h2 id="风险把控"><a href="#风险把控" class="headerlink" title="风险把控"></a>风险把控</h2><h2 id="迅速决断优先级"><a href="#迅速决断优先级" class="headerlink" title="迅速决断优先级"></a>迅速决断优先级</h2><h2 id="允许不足"><a href="#允许不足" class="headerlink" title="允许不足"></a>允许不足</h2><h2 id="复用"><a href="#复用" class="headerlink" title="复用"></a>复用</h2><h2 id="创新"><a href="#创新" class="headerlink" title="创新"></a>创新</h2><h1 id="产品经理与设计如何合作"><a href="#产品经理与设计如何合作" class="headerlink" title="产品经理与设计如何合作"></a>产品经理与设计如何合作</h1><p>原型图是否必须<br>组件化的方式提高工作效率</p>
+<h1 id="产品经理与开发如何合作"><a href="#产品经理与开发如何合作" class="headerlink" title="产品经理与开发如何合作"></a>产品经理与开发如何合作</h1><p>产品经理原型图</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/复盘-能力/" rel="tag"># 复盘 - 能力</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/21/13-初级产品经理的工作流程01/" rel="next" title="产品系列01-初级产品经理的工作流程">
+                <i class="fa fa-chevron-left"></i> 产品系列01-初级产品经理的工作流程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/06/工具系列-使用SecureCRT抓盒子log/" rel="prev" title="工具系列02-使用SecureCRT抓盒子log">
+                工具系列02-使用SecureCRT抓盒子log <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/touxiang.png"
+               alt="zhangxiaoxiaomin" />
+          <p class="site-author-name" itemprop="name">zhangxiaoxiaomin</p>
+           
+              <p class="site-description motion-element" itemprop="description">Stay Hungray,Stay Foolish.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">43</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">52</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#产品经理需要关注的几个点"><span class="nav-number">1.</span> <span class="nav-text">产品经理需要关注的几个点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#版本迭代计划"><span class="nav-number">1.1.</span> <span class="nav-text">版本迭代计划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目进展（市场反馈）"><span class="nav-number">1.2.</span> <span class="nav-text">项目进展（市场反馈）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术研究点"><span class="nav-number">1.3.</span> <span class="nav-text">技术研究点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#盈利模式"><span class="nav-number">1.4.</span> <span class="nav-text">盈利模式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#产品经理的软实力"><span class="nav-number">2.</span> <span class="nav-text">产品经理的软实力</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#自信"><span class="nav-number">2.1.</span> <span class="nav-text">自信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#把握核心业务"><span class="nav-number">2.2.</span> <span class="nav-text">把握核心业务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需求池"><span class="nav-number">2.3.</span> <span class="nav-text">需求池</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全局观"><span class="nav-number">2.4.</span> <span class="nav-text">全局观</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#风险把控"><span class="nav-number">2.5.</span> <span class="nav-text">风险把控</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迅速决断优先级"><span class="nav-number">2.6.</span> <span class="nav-text">迅速决断优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#允许不足"><span class="nav-number">2.7.</span> <span class="nav-text">允许不足</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复用"><span class="nav-number">2.8.</span> <span class="nav-text">复用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创新"><span class="nav-number">2.9.</span> <span class="nav-text">创新</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#产品经理与设计如何合作"><span class="nav-number">3.</span> <span class="nav-text">产品经理与设计如何合作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#产品经理与开发如何合作"><span class="nav-number">4.</span> <span class="nav-text">产品经理与开发如何合作</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhangxiaoxiaomin</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

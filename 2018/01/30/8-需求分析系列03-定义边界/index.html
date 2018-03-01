@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="SecureCRT,抓盒子log," />
+  <meta name="keywords" content="UML,软件过程,需求分析," />
 
 
 
@@ -93,17 +93,19 @@
 
 
 
-<meta name="description" content="准备工作 下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。  连接盒子 将U盘外接在盒子上； 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。">
-<meta name="keywords" content="SecureCRT,抓盒子log">
+<meta name="description" content="前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，边界定义最重要，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。">
+<meta name="keywords" content="UML,软件过程,需求分析">
 <meta property="og:type" content="article">
-<meta property="og:title" content="工具系列02-使用SecureCRT抓盒子log">
-<meta property="og:url" content="http://yoursite.com/2017/09/06/工具系列-使用SecureCRT抓盒子log/index.html">
+<meta property="og:title" content="获取需求系列03-定义边界、发现主角、获取业务用例">
+<meta property="og:url" content="http://yoursite.com/2018/01/30/8-需求分析系列03-定义边界/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="准备工作 下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。  连接盒子 将U盘外接在盒子上； 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。">
-<meta property="og:updated_time" content="2018-02-12T02:15:02.411Z">
+<meta property="og:description" content="前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，边界定义最重要，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML03-%E8%8E%B7%E5%8F%96%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B.png">
+<meta property="og:updated_time" content="2018-02-08T13:50:39.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="工具系列02-使用SecureCRT抓盒子log">
-<meta name="twitter:description" content="准备工作 下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。  连接盒子 将U盘外接在盒子上； 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。">
+<meta name="twitter:title" content="获取需求系列03-定义边界、发现主角、获取业务用例">
+<meta name="twitter:description" content="前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，边界定义最重要，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML03-%E8%8E%B7%E5%8F%96%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B.png">
 
 
 
@@ -131,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/06/工具系列-使用SecureCRT抓盒子log/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/30/8-需求分析系列03-定义边界/"/>
 
 
 
 
 
-  <title>工具系列02-使用SecureCRT抓盒子log | Hexo</title>
+  <title>获取需求系列03-定义边界、发现主角、获取业务用例 | Hexo</title>
   
 
 
@@ -276,7 +278,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/06/工具系列-使用SecureCRT抓盒子log/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/30/8-需求分析系列03-定义边界/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangxiaoxiaomin">
@@ -293,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">工具系列02-使用SecureCRT抓盒子log</h1>
+          <h1 class="post-title" itemprop="name headline">获取需求系列03-定义边界、发现主角、获取业务用例</h1>
         
 
         <div class="post-meta">
@@ -305,8 +307,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T21:27:30+08:00">
-                2017-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-30T17:21:56+08:00">
+                2018-01-30
               </time>
             
 
@@ -328,8 +330,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/产品方法论/" itemprop="url" rel="index">
+                    <span itemprop="name">产品方法论</span>
                   </a>
                 </span>
 
@@ -362,23 +364,21 @@
       
 
       
-        <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><blockquote>
-<p>下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。</p>
-</blockquote>
-<h2 id="连接盒子"><a href="#连接盒子" class="headerlink" title="连接盒子"></a>连接盒子</h2><ol>
-<li>将U盘外接在盒子上；</li>
-<li>打开SecureCRT-&gt;快速连接-&gt;协议选talent-&gt;输入盒子的IP-&gt;确定；</li>
-<li>连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。</li>
-</ol>
+        <p>前面两篇博客，我们得到了涉众分析报告和涉众简档，规划了业务范围。现在可以开始获取需求的进程了。主角、边界、用例是相生相灭的关系，<strong>边界定义最重要</strong>，定义了边界，主角就能定义，一旦定义了主角，用例就能发现。</p>
 <a id="more"></a>
-<h2 id="拷贝tcpdump至盒子"><a href="#拷贝tcpdump至盒子" class="headerlink" title="拷贝tcpdump至盒子"></a>拷贝tcpdump至盒子</h2><ol>
-<li>mount /dev/sda1 /mnt    挂U盘</li>
-<li>cp /mnt/tcpdump /root/   拷贝tcpdump到盒子根目录下</li>
-<li>umount /mnt  弹出U盘</li>
-</ol>
-<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>vi config.ini (按a后可对配置文件进行修改)<br>将 debug-level=0 一行的值改为 debug-level=1（页面打印）、<br>依次按键Esc ：wq 后按enter    保存修改</p>
-<h2 id="开始打印"><a href="#开始打印" class="headerlink" title="开始打印"></a>开始打印</h2><p>./autorun  开始抓log咯<br>SecureCRT-&gt;文件-&gt;记录会话-&gt;选择保存log的路径<br>开始操作盒子<br>Ctrl+c 停止打印</p>
-<h2 id="还原配置文件"><a href="#还原配置文件" class="headerlink" title="还原配置文件"></a>还原配置文件</h2><p>vi config.ini<br>debug-level修改回0后，保存修改。<br>如果不操作这一步盒子会非常慢。</p>
+<h3 id="定义边界"><a href="#定义边界" class="headerlink" title="定义边界"></a>定义边界</h3><p>根据上一个环节中整理的业务目标，可以很容易推导出边界来。例如根据业务目标“会议资料规范管理；”，我们可以定义出一个命名为“会议资料管理”的业务边界。但是不是什么时候以业务目标为依据划分边界都是有效的。例如，如果准备开发的系统是以计算、控制、自动化等为主要目的的，似乎就很难找出明确的业务目标。但是这个思路仍然是可行的，即时一个系统没有明确的业务目标，但是一定会有明确的功能目标，例如手机系统其功能目标是拨打电话、接听电话、媒体库等，也可以用它们来建立边界。</p>
+<h3 id="发现主角"><a href="#发现主角" class="headerlink" title="发现主角"></a>发现主角</h3><p>每一个业务目标都可以用来定义边界，每个边界有不同的涉众参与，也会有不同的用例出现。边界外的涉众叫做主角，边界内涉众的叫做业务工人。一旦边界确定了，则在边界外与该边界有利益关系的一切东西，不论它是人、物或者系统，都是业务主角。<br>如何发现主角？首先，根据涉众分析报告，我们得到了涉众列表；其次，根据边界的定义，我们可以找到那些站在边界外的涉众。<em>只有那些与系统直接交互的涉众才能被称为业务主角。</em><br>如果在分析过程中发现有些业务主角找不到对应的边界，或者业务主角的一些要求没地方放置，那么应该回头审视边界分析、主角定义是否完整。</p>
+<h3 id="获取业务用例"><a href="#获取业务用例" class="headerlink" title="获取业务用例"></a>获取业务用例</h3><p>业务主角站在边界之外，背负则涉众赋予的业务目标。主角说：“我要做这件事，做完后我能得到什么；我还要做那件事，这样就能达到什么目的……当这些事都做完了，我就能建立一个文明。”对系统来说，每一件事就是一个业务用例，每个业务用例体现了业务主角的一个系统期望，而所有的这种期望则完成边界所代表的业务目标。</p>
+<p>分析出有什么角色将会使用本系统，用用例图描绘出系统的功能。业务用例必须是以达到业务主角的完整业务目标为标准，而不能以实现业务主角业务目标的步骤为标准。</p>
+<p>获取业务用例的方法有很多：1.公司的培训手册、业务流程指南等文件；2.业务主角访谈。可以通过下列问题引导业务主角代表说出他们的业务需求：</p>
+<ul>
+<li>您对系统有什么期望？</li>
+<li>您打算用这个系统做些什么事情？</li>
+<li>您做这件事情的目的是什么？</li>
+<li>您做完这件事希望有什么样的结果？</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML03-%E8%8E%B7%E5%8F%96%E4%B8%9A%E5%8A%A1%E7%94%A8%E4%BE%8B.png" alt="定义边界、发现主角、确定业务用例"></p>
+<p>参考阅读：<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em><br>          <em><a href="https://book.douban.com/subject/10511247/" target="_blank" rel="external">《火球:UML大战需求分析》</a></em></p>
 
       
     </div>
@@ -408,9 +408,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/SecureCRT/" rel="tag"># SecureCRT</a>
+            <a href="/tags/UML/" rel="tag"># UML</a>
           
-            <a href="/tags/抓盒子log/" rel="tag"># 抓盒子log</a>
+            <a href="/tags/软件过程/" rel="tag"># 软件过程</a>
+          
+            <a href="/tags/需求分析/" rel="tag"># 需求分析</a>
           
         </div>
       
@@ -423,8 +425,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/25/15-产品那些事儿03/" rel="next" title="产品的那些事儿系列03-关于产品经理的能力">
-                <i class="fa fa-chevron-left"></i> 产品的那些事儿系列03-关于产品经理的能力
+              <a href="/2018/01/30/7-需求分析系列02-需要分析/" rel="next" title="获取需求系列02-需要分析">
+                <i class="fa fa-chevron-left"></i> 获取需求系列02-需要分析
               </a>
             
           </div>
@@ -433,8 +435,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/24/为了世界和平，请认真阅读本文/" rel="prev" title="产品经理防坑指南">
-                产品经理防坑指南 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/30/9-需求分析系列04-业务建模/" rel="prev" title="获取需求系列04-业务建模">
+                获取需求系列04-业务建模 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -564,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连接盒子"><span class="nav-number">2.</span> <span class="nav-text">连接盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拷贝tcpdump至盒子"><span class="nav-number">3.</span> <span class="nav-text">拷贝tcpdump至盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置文件"><span class="nav-number">4.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始打印"><span class="nav-number">5.</span> <span class="nav-text">开始打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#还原配置文件"><span class="nav-number">6.</span> <span class="nav-text">还原配置文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义边界"><span class="nav-number">1.</span> <span class="nav-text">定义边界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发现主角"><span class="nav-number">2.</span> <span class="nav-text">发现主角</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取业务用例"><span class="nav-number">3.</span> <span class="nav-text">获取业务用例</span></a></li></ol></div>
             
 
           </div>

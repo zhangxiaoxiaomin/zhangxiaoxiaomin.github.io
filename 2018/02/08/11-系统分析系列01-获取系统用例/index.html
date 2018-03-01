@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="UML,软件过程,系统分析," />
 
 
 
@@ -93,15 +93,19 @@
 
 
 
-<meta name="description" content="Stay Hungray,Stay Foolish.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/系统分析/index.html">
+<meta name="description" content="之前的工作是确定需求范围，也就是就有世界有哪些东西；而现在的工作时确定系统范围，即新世界有哪些东西。需求范围≠系统范围。不是所有需求都要在系统中实现，也不是所有系统功能都是从需求中来。">
+<meta name="keywords" content="UML,软件过程,系统分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="系统分析系列01-获取系统用例">
+<meta property="og:url" content="http://yoursite.com/2018/02/08/11-系统分析系列01-获取系统用例/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Stay Hungray,Stay Foolish.">
+<meta property="og:description" content="之前的工作是确定需求范围，也就是就有世界有哪些东西；而现在的工作时确定系统范围，即新世界有哪些东西。需求范围≠系统范围。不是所有需求都要在系统中实现，也不是所有系统功能都是从需求中来。">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90.png">
+<meta property="og:updated_time" content="2018-02-11T08:09:48.626Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="Stay Hungray,Stay Foolish.">
+<meta name="twitter:title" content="系统分析系列01-获取系统用例">
+<meta name="twitter:description" content="之前的工作是确定需求范围，也就是就有世界有哪些东西；而现在的工作时确定系统范围，即新世界有哪些东西。需求范围≠系统范围。不是所有需求都要在系统中实现，也不是所有系统功能都是从需求中来。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90.png">
 
 
 
@@ -129,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/系统分析/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/08/11-系统分析系列01-获取系统用例/"/>
 
 
 
 
 
-  <title>标签: 系统分析 | Hexo</title>
+  <title>系统分析系列01-获取系统用例 | Hexo</title>
   
 
 
@@ -160,7 +164,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -264,72 +268,188 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>系统分析<small>标签</small>
-      </h1>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/11/12-系统分析系列02-实现系统用例/" itemprop="url">
-              
-                <span itemprop="name">系统分析系列02-实现系统用例</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-11T14:44:11+08:00"
-              content="2018-02-11" >
-          02-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/08/11-系统分析系列01-获取系统用例/" itemprop="url">
-              
-                <span itemprop="name">系统分析系列01-获取系统用例</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-08T21:57:54+08:00"
-              content="2018-02-08" >
-          02-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/08/11-系统分析系列01-获取系统用例/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangxiaoxiaomin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">系统分析系列01-获取系统用例</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T21:57:54+08:00">
+                2018-02-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品方法论/" itemprop="url" rel="index">
+                    <span itemprop="name">产品方法论</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>之前的工作是确定需求范围，也就是就有世界有哪些东西；而现在的工作时确定系统范围，即新世界有哪些东西。需求范围≠系统范围。不是所有需求都要在系统中实现，也不是所有系统功能都是从需求中来。<br><a id="more"></a><br>首先分析业务用例场景，从业务用例场景中抽象出可以在计算机当中实现的单元来，业务用例场景中被描述为XX做什么、XX又做什么……XX做什么就是系统用例的来源，看做备选用例。<strong>对业务用例来说，它应当包含一个完整的业务目标；对于系统用例来说则应当包含一个完整的事件。</strong><br>接下来就是判断备选用例是否应当被纳入系统的基本方法：</p>
+<ol>
+<li>映射<br>映射是最简单的办法，备选用例可以不经任何修改直接被采纳为系统用例。</li>
+<li>抽象<br>当备选用例不能被直接映射时，我们可能需要进行一些抽象，找到该备选案例在计算机中真正要做的事情。例如办理登记手续时，核对身份实际上要做的是查询机票预订信息以及身份证信息。</li>
+<li>合并<br>当备选用例不具有独立性时，它必然是其他某个事件的组成部分。例如，打印登机牌就被合并到值机人员手续这个备选案例中。</li>
+<li>拆分<br>有时备选案例粒度很大，是几个事件的集合，就需要进行拆分。因为系统用例至描述一次完整的计算机交互过程。</li>
+<li>演绎<br>有时候业务用例场景中找不到备选案例，或者备选案例并不适合用计算机实现，但是我们能预见某个可能的系统用例潜伏在备选案例中，这时我们可以用演绎的方法将它找出来。</li>
+</ol>
+<p>通过上面的方法找到系统用例后，接下来就是描述系统用例，方法与业务建模类似。与业务用例场景相比，在系统用例场景当中出现了计算机这样一个泳道。这个场景描述的内容实际上是一个人机交互过程，即业务员如何操作、计算机如何动作的过程。所谓系统建模，就是引入计算机系统后，业务如何通过计算机得以实现的过程。</p>
+<p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90.png" alt="获取系统用例"></p>
+<p>参考阅读：<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em><br>          <em><a href="https://book.douban.com/subject/10511247/" target="_blank" rel="external">《火球:UML大战需求分析》</a></em></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/UML/" rel="tag"># UML</a>
+          
+            <a href="/tags/软件过程/" rel="tag"># 软件过程</a>
+          
+            <a href="/tags/系统分析/" rel="tag"># 系统分析</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/06/14-产品的那些事儿02/" rel="next" title="产品的那些事儿系列02-关于改变">
+                <i class="fa fa-chevron-left"></i> 产品的那些事儿系列02-关于改变
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/11/12-系统分析系列02-实现系统用例/" rel="prev" title="系统分析系列02-实现系统用例">
+                系统分析系列02-实现系统用例 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -337,6 +457,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -539,10 +663,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 

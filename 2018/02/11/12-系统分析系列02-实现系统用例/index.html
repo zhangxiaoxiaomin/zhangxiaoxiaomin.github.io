@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="SecureCRT,抓盒子log," />
+  <meta name="keywords" content="UML,软件过程,系统分析," />
 
 
 
@@ -93,17 +93,20 @@
 
 
 
-<meta name="description" content="准备工作 下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。  连接盒子 将U盘外接在盒子上； 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。">
-<meta name="keywords" content="SecureCRT,抓盒子log">
+<meta name="description" content="很多项目中，没有用例实现这一步骤，在系统用例确定了之后，直接进入系统设计阶段，进行类设计、表设计等。但是，仔细思考，我们发现用例和类之间似乎有一道鸿沟，我们不知道类是如何被推导出来的，观察系统用例实现场景（下图），我们找不到类的痕迹。实现用例是跨越从系统需求到设计模型之间的那道桥梁。">
+<meta name="keywords" content="UML,软件过程,系统分析">
 <meta property="og:type" content="article">
-<meta property="og:title" content="工具系列02-使用SecureCRT抓盒子log">
-<meta property="og:url" content="http://yoursite.com/2017/09/06/工具系列-使用SecureCRT抓盒子log/index.html">
+<meta property="og:title" content="系统分析系列02-实现系统用例">
+<meta property="og:url" content="http://yoursite.com/2018/02/11/12-系统分析系列02-实现系统用例/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="准备工作 下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。  连接盒子 将U盘外接在盒子上； 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。">
-<meta property="og:updated_time" content="2018-02-12T02:15:02.411Z">
+<meta property="og:description" content="很多项目中，没有用例实现这一步骤，在系统用例确定了之后，直接进入系统设计阶段，进行类设计、表设计等。但是，仔细思考，我们发现用例和类之间似乎有一道鸿沟，我们不知道类是如何被推导出来的，观察系统用例实现场景（下图），我们找不到类的痕迹。实现用例是跨越从系统需求到设计模型之间的那道桥梁。">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E6%B4%BB%E5%8A%A8%E5%9B%BE.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/sur_%E5%8F%91%E8%B5%B7%E4%BC%9A%E8%AE%AE%E7%94%A8%E4%BE%8B%E5%AE%9E%E7%8E%B0.jpg">
+<meta property="og:updated_time" content="2018-02-11T10:36:47.858Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="工具系列02-使用SecureCRT抓盒子log">
-<meta name="twitter:description" content="准备工作 下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。  连接盒子 将U盘外接在盒子上； 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。">
+<meta name="twitter:title" content="系统分析系列02-实现系统用例">
+<meta name="twitter:description" content="很多项目中，没有用例实现这一步骤，在系统用例确定了之后，直接进入系统设计阶段，进行类设计、表设计等。但是，仔细思考，我们发现用例和类之间似乎有一道鸿沟，我们不知道类是如何被推导出来的，观察系统用例实现场景（下图），我们找不到类的痕迹。实现用例是跨越从系统需求到设计模型之间的那道桥梁。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E6%B4%BB%E5%8A%A8%E5%9B%BE.jpg">
 
 
 
@@ -131,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/06/工具系列-使用SecureCRT抓盒子log/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/11/12-系统分析系列02-实现系统用例/"/>
 
 
 
 
 
-  <title>工具系列02-使用SecureCRT抓盒子log | Hexo</title>
+  <title>系统分析系列02-实现系统用例 | Hexo</title>
   
 
 
@@ -276,7 +279,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/06/工具系列-使用SecureCRT抓盒子log/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/11/12-系统分析系列02-实现系统用例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhangxiaoxiaomin">
@@ -293,7 +296,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">工具系列02-使用SecureCRT抓盒子log</h1>
+          <h1 class="post-title" itemprop="name headline">系统分析系列02-实现系统用例</h1>
         
 
         <div class="post-meta">
@@ -305,8 +308,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T21:27:30+08:00">
-                2017-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T14:44:11+08:00">
+                2018-02-11
               </time>
             
 
@@ -328,8 +331,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/产品方法论/" itemprop="url" rel="index">
+                    <span itemprop="name">产品方法论</span>
                   </a>
                 </span>
 
@@ -362,23 +365,20 @@
       
 
       
-        <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><blockquote>
-<p>下载SecureCRT、tcpdump；安装SecureCRT；拷贝tcpdump至U盘中。</p>
-</blockquote>
-<h2 id="连接盒子"><a href="#连接盒子" class="headerlink" title="连接盒子"></a>连接盒子</h2><ol>
-<li>将U盘外接在盒子上；</li>
-<li>打开SecureCRT-&gt;快速连接-&gt;协议选talent-&gt;输入盒子的IP-&gt;确定；</li>
-<li>连接成功后页面中会提示输入用户名、密码；输入用户名（root）、密码（空）后，连接成功盒子会重启；按Ctrl+C截断输出。</li>
-</ol>
-<a id="more"></a>
-<h2 id="拷贝tcpdump至盒子"><a href="#拷贝tcpdump至盒子" class="headerlink" title="拷贝tcpdump至盒子"></a>拷贝tcpdump至盒子</h2><ol>
-<li>mount /dev/sda1 /mnt    挂U盘</li>
-<li>cp /mnt/tcpdump /root/   拷贝tcpdump到盒子根目录下</li>
-<li>umount /mnt  弹出U盘</li>
-</ol>
-<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>vi config.ini (按a后可对配置文件进行修改)<br>将 debug-level=0 一行的值改为 debug-level=1（页面打印）、<br>依次按键Esc ：wq 后按enter    保存修改</p>
-<h2 id="开始打印"><a href="#开始打印" class="headerlink" title="开始打印"></a>开始打印</h2><p>./autorun  开始抓log咯<br>SecureCRT-&gt;文件-&gt;记录会话-&gt;选择保存log的路径<br>开始操作盒子<br>Ctrl+c 停止打印</p>
-<h2 id="还原配置文件"><a href="#还原配置文件" class="headerlink" title="还原配置文件"></a>还原配置文件</h2><p>vi config.ini<br>debug-level修改回0后，保存修改。<br>如果不操作这一步盒子会非常慢。</p>
+        <p>很多项目中，没有用例实现这一步骤，在系统用例确定了之后，直接进入系统设计阶段，进行类设计、表设计等。但是，仔细思考，我们发现用例和类之间似乎有一道鸿沟，我们不知道类是如何被推导出来的，观察系统用例实现场景（下图），我们找不到类的痕迹。实现用例是跨越从系统需求到设计模型之间的那道桥梁。<br><a id="more"></a><br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/UML04-%E6%B4%BB%E5%8A%A8%E5%9B%BE.jpg" alt="用例实现场景"></p>
+<p>用例场景和用例规约是我们实现用例的基础，而我们采用的工具是分析模型。分析模型是将用例场景中的业务分解为边界（操作界面和展示界面）、控制（业务逻辑）和实体（业务数据），用这三个元素建立实现用例场景的对象模型。所以边界类、实体类、控制类就是我们要寻找的关键对象。为了得到我们所需要的分析类对象，我们一步步地来分析场景当中的活动。</p>
+<ul>
+<li>发起会议<br>这是一条在系统外部发出的指令，我们需要使用<strong>边界对象</strong>来接收它。</li>
+<li>展现会议信息录入界面<br>我们需要用<strong>边界对象</strong>来处理。</li>
+<li>录入会议基础信息<br>录入会议信息是一个人工活动，会议基础信息看上去是一个备选的实体对象，不过它实际上只是<strong>会议信息实体对象</strong>的一部分。</li>
+<li>提交<br>这是一条在系统外部发出的指令，需要用<strong>边界对象</strong>来接收它。</li>
+<li>校验数据的准确性<br>这是一条内在规则，由<strong>控制对象</strong>来处理它。</li>
+<li>创建会议<br>这是一段程序处理逻辑，我们需要用<strong>控制对象</strong>来处理，创建会议后会生成<strong>会议信息实体对象</strong></li>
+<li>发送通知给参会人<br>这是一段程序处理逻辑，我们需要用<strong>控制对象</strong>来处理。</li>
+<li>显示结果<br>这是一段程序处理逻辑，我们需要用<strong>控制对象</strong>来处理，并将结果反馈给<strong>边界对象</strong>。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/sur_%E5%8F%91%E8%B5%B7%E4%BC%9A%E8%AE%AE%E7%94%A8%E4%BE%8B%E5%AE%9E%E7%8E%B0.jpg" alt="sur_发起会议"></p>
+<p>参考阅读：<em><a href="https://book.douban.com/subject/10549583/" target="_blank" rel="external">《大象-Thinking in UML》</a></em><br>          <em><a href="https://book.douban.com/subject/10511247/" target="_blank" rel="external">《火球:UML大战需求分析》</a></em></p>
 
       
     </div>
@@ -408,9 +408,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/SecureCRT/" rel="tag"># SecureCRT</a>
+            <a href="/tags/UML/" rel="tag"># UML</a>
           
-            <a href="/tags/抓盒子log/" rel="tag"># 抓盒子log</a>
+            <a href="/tags/软件过程/" rel="tag"># 软件过程</a>
+          
+            <a href="/tags/系统分析/" rel="tag"># 系统分析</a>
           
         </div>
       
@@ -423,8 +425,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/25/15-产品那些事儿03/" rel="next" title="产品的那些事儿系列03-关于产品经理的能力">
-                <i class="fa fa-chevron-left"></i> 产品的那些事儿系列03-关于产品经理的能力
+              <a href="/2018/02/08/11-系统分析系列01-获取系统用例/" rel="next" title="系统分析系列01-获取系统用例">
+                <i class="fa fa-chevron-left"></i> 系统分析系列01-获取系统用例
               </a>
             
           </div>
@@ -433,8 +435,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/24/为了世界和平，请认真阅读本文/" rel="prev" title="产品经理防坑指南">
-                产品经理防坑指南 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/11/软件架构与软件框架/" rel="prev" title="软件架构与软件框架">
+                软件架构与软件框架 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -482,17 +484,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/touxiang.png"
@@ -554,22 +547,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连接盒子"><span class="nav-number">2.</span> <span class="nav-text">连接盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拷贝tcpdump至盒子"><span class="nav-number">3.</span> <span class="nav-text">拷贝tcpdump至盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置文件"><span class="nav-number">4.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始打印"><span class="nav-number">5.</span> <span class="nav-text">开始打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#还原配置文件"><span class="nav-number">6.</span> <span class="nav-text">还原配置文件</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
