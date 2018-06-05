@@ -100,10 +100,12 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/24/33-如何使用HEXO写博客/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前置条件： 安装git 安装nodejs 安装hexo 更换hexo主题  本文将说明如何使用hexo写一篇新博客。">
-<meta property="og:updated_time" content="2018-04-16T03:07:29.118Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/45-1.png">
+<meta property="og:updated_time" content="2018-06-05T12:33:10.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工具系列00-如何使用HEXO写博客">
 <meta name="twitter:description" content="前置条件： 安装git 安装nodejs 安装hexo 更换hexo主题  本文将说明如何使用hexo写一篇新博客。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/45-1.png">
 
 
 
@@ -389,7 +391,10 @@
 <li>输入命令：<br><code>git config --global credential.helper store</code></li>
 <li>输入 <code>hexo d</code><br>输入git账户名和密码</li>
 </ol>
-<h3 id="如何使用图片"><a href="#如何使用图片" class="headerlink" title="如何使用图片"></a>如何使用图片</h3><p>我采用的方法是将图片上传至git，然后获取到图片的</p>
+<h3 id="如何使用图片"><a href="#如何使用图片" class="headerlink" title="如何使用图片"></a>如何使用图片</h3><p>我采用的方法是将图片上传至git，然后获取到图片的地址。<br>git的安装方法和新建目录方法在此不做赘述，感兴趣的baidu。</p>
+<ol>
+<li>将图片上传到git；<br><code>git status</code><br><code>git add 文件名</code><br><code>git commit -m &quot;message&quot;</code><br><code>git push</code><br>2.在github中查看图片，点击download，拷贝图片地址<a href="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/45-1.png" target="_blank" rel="external">https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/45-1.png</a><br>3.在博客中，使用markdown语法插入图片<br><code>![](https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/45-1.png)</code><br>诺，就是这样<br><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/45-1.png" alt=""></li>
+</ol>
 
       
     </div>
@@ -512,7 +517,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">45</span>
+                <span class="site-state-item-count">46</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -534,7 +539,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">54</span>
+                <span class="site-state-item-count">57</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
