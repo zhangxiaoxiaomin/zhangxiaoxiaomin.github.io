@@ -1,0 +1,755 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="产品,产品管理," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="当初我选择产品经理这份职业是想研发一款客户喜爱的、有价值的产品，往大了说怀揣着改变世界的决心。可惜到目前不能如愿，一方面受累于公司混乱且低效的产品管理流程；另一方面局限于个人能力。一直以来苦 于探索出一套最佳实践经验，但总不得要领，像是在黑夜里行走，看不清方向。直到遇到《启示录：如何打造用户喜爱的产品》这本书，才将我从困境中解救出来。我一口气读完了整本书并做了详细笔记，而后立即将书中理念运用到实际">
+<meta name="keywords" content="产品,产品管理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="月半读书02-《如何打造用户喜爱的产品》">
+<meta property="og:url" content="http://yoursite.com/2018/05/09/44-月半读书03-如何打造用户喜爱的产品/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="当初我选择产品经理这份职业是想研发一款客户喜爱的、有价值的产品，往大了说怀揣着改变世界的决心。可惜到目前不能如愿，一方面受累于公司混乱且低效的产品管理流程；另一方面局限于个人能力。一直以来苦 于探索出一套最佳实践经验，但总不得要领，像是在黑夜里行走，看不清方向。直到遇到《启示录：如何打造用户喜爱的产品》这本书，才将我从困境中解救出来。我一口气读完了整本书并做了详细笔记，而后立即将书中理念运用到实际">
+<meta property="og:updated_time" content="2018-05-08T17:22:46.811Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="月半读书02-《如何打造用户喜爱的产品》">
+<meta name="twitter:description" content="当初我选择产品经理这份职业是想研发一款客户喜爱的、有价值的产品，往大了说怀揣着改变世界的决心。可惜到目前不能如愿，一方面受累于公司混乱且低效的产品管理流程；另一方面局限于个人能力。一直以来苦 于探索出一套最佳实践经验，但总不得要领，像是在黑夜里行走，看不清方向。直到遇到《启示录：如何打造用户喜爱的产品》这本书，才将我从困境中解救出来。我一口气读完了整本书并做了详细笔记，而后立即将书中理念运用到实际">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/09/44-月半读书03-如何打造用户喜爱的产品/"/>
+
+
+
+
+
+  <title>月半读书02-《如何打造用户喜爱的产品》 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/44-月半读书03-如何打造用户喜爱的产品/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangxiaoxiaomin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">月半读书02-《如何打造用户喜爱的产品》</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-09T01:01:37+08:00">
+                2018-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/月半读书/" itemprop="url" rel="index">
+                    <span itemprop="name">月半读书</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>当初我选择产品经理这份职业是想研发一款客户喜爱的、有价值的产品，往大了说怀揣着改变世界的决心。可惜到目前不能如愿，一方面受累于公司混乱且低效的产品管理流程；另一方面局限于个人能力。一直以来苦 于探索出一套最佳实践经验，但总不得要领，像是在黑夜里行走，看不清方向。直到遇到《启示录：如何打造用户喜爱的产品》这本书，才将我从困境中解救出来。我一口气读完了整本书并做了详细笔记，而后立即将书中理念运用到实际项目中，目前成为了我的最佳实践。<br><a id="more"></a></p>
+<p>今天我想分享的是作者在书中总结的打造富有创意产品的十个最重要关键点。</p>
+<h3 id="1-产品管理的职责；"><a href="#1-产品管理的职责；" class="headerlink" title="1. 产品管理的职责；"></a>1. 产品管理的职责；</h3><p>前几天在一个产品经理的微信群里有人抛出了一个问题是“你们的公司有项目经理吗？”然后我看下面的回复，有的是说“产品经理同时兼任项目经理”、有的是说“看公司规模和钱，没钱的时候产品、测试、运营一起干”等等。从大家的回复来看，目前很大一部分公司，产品经理同时兼任了项目、运营的工作。但是作者在书中第一个关键点就，明确指出，项目管理和运营管理这都不是产品经理该干的活。（实际上很多公司产品经理兼任项目经理，作为一名从业者，需要有清晰的认识）产品经理的主要职责分为两项：评估产品机会、定义要开发的产品，那么就涉及到第二个和第三个关键点了。</p>
+<h3 id="2-机会评估"><a href="#2-机会评估" class="headerlink" title="2. 机会评估"></a>2. 机会评估</h3><p>大多数公司的产品选择权掌握在高管手中，这类决定不容质疑，只能执行；有些公司的产品选择权由市场部门掌握；还有些公司的产品创意来自开发团队。在这些情况下，评估产品机会的流程往往被忽略，一切全凭直觉判断。结果出现一大批回避评估产品机会，直扑产品的产品经理。评估产品机会的目的在于：淘汰馊主意、避免浪费时间和金钱；挑选合适的产品机会，团结团队，理解产品，整合资源。<br>用方便快捷的机会评估取代过时的市场需求文档。动手涉及产品之前，先明确产品要解决什么问题，为谁解决，以及评估产品的标准。作者提出用十个问题来替代：<br>产品要解决什么问题？（产品价值）<br>为谁解决这个问题？（目标市场）<br>成功的机会有多大？（市场规模）<br>怎样判断产品成功与否？（度量指标或收益指标）<br>有哪些同类产品？（竞争格局）<br>为什么我们最适合做这个产品？（竞争优势）<br>时机合适吗？（市场时机）<br>如何把产品推向市场？（营销组合策略）<br>成功的必要条件是什么？（解决方案要满足什么条件）<br>根据以上问题，给出评估结论。（继续或放弃）<br>机会评估只讨论待解决的问题，不涉及具体的解决方案。产品经理往往把待解决的问题和解决方案放在一起考虑，当具体解决方案遇到困难s时，他们会放弃产品机会，这是典型的“把洗澡水和孩子一起泼掉”的做法。</p>
+<h3 id="3-探索（定义产品）"><a href="#3-探索（定义产品）" class="headerlink" title="3. 探索（定义产品）"></a>3. 探索（定义产品）</h3><p>产品经理的主要职责是探索（定义）有价值的、可用的、可行的产品。除非产品经理想确定这三点，否则同事的努力都将付之东流。在探索产品的阶段，产品经理负责分析各种创意，广泛收集用户需求，了解如何运用新技术，拿出产品原型并加以测试，从全局视角思考产品方向，兼顾短期需求和长期规划。</p>
+<h3 id="4-用户体验"><a href="#4-用户体验" class="headerlink" title="4. 用户体验"></a>4. 用户体验</h3><p>在软件开发过程中，很多工作可以同时进行，比如，需求调研和用户体验设计是互相影响的，应该同步展开。过去瀑布模型中，产品经理先进行需求调研，然后交给交互设计师设计的当时，被认为是一种陈旧的产品开发思路。<br>尽管如此，有些工作不能同步展开，比如把用户体验设计和软件开发放在一起进行，这是行不通的。（疑问：没有哪家公司是这么干的吧……）</p>
+<h3 id="5-特约用户"><a href="#5-特约用户" class="headerlink" title="5. 特约用户"></a>5. 特约用户</h3><p>作者建议邀请10~15人活跃、积极的目标用户作为特约用户，参与构思产品创意、提前试用吹牛皮。使用特约用户是确保产品不偏离用户需求最简单有效的办法，提示也是向潜在用户宣传、推荐产品的最佳手段。</p>
+<h3 id="6-产品原则"><a href="#6-产品原则" class="headerlink" title="6. 产品原则"></a>6. 产品原则</h3><p>在参与产品策划之初，要做的第一件事就是确定产品原则。产品原则如同是产品的宪法，可以用来指导产品团队做出正确的决策和取舍。举例来说，同一个问题：产品是否设置消息已读回执？微信的产品原则有一条是信息接收方的体验重要性大于信息发送方。那么多这条原则的角度去思考，如果设置消息已读回执，对于信息发送方来说，就很爽了；但是对于信息接收方来说，压力会比较大，因为我看到不代表我想回你，但是你知道我看到了，所以不回你显得我很没有礼貌。钉钉是一款为老板服务的软件，从老板的需求出发，老板想知道员工看没看到消息，所以钉钉能看到消息是否已读。（~钉钉反人类科技的名号就是这么来的）</p>
+<p>总结一下，产品原则就是确定什么是最重要的，它指导着产品前进的方向，代表着产品的定位和运营逻辑。如果在体验产品的时候，发现某个功能的设定让人百思不得其解时，不妨结合产品原则一起推敲，或许会豁然开朗。那么在我们自己策划产品的过程中，总会遇到大家意见不一致的情况，领导说这期你得先做A功能，设计人员说你得优先考虑用户交互体验……那怎么做决定，常见的办法有少数服从多数、领导拍板、数据说话。先说少数服务多数，如果想做个平庸的产品可以用这招哈；再来领导拍板，是靠头脑发热吗，显然是要有依据才能服众嘛，那么产品原则就是不容质疑的“宪法”；用数据说话，数据只能提供单一因素、单一层面的参考，不能作为综合性决定的唯一决定因素。</p>
+<p>综上分析，产品原则之于产品相当于“宪法”之于国家，其重要性不容忽视。</p>
+<h3 id="7-人物角色"><a href="#7-人物角色" class="headerlink" title="7. 人物角色"></a>7. 人物角色</h3><p>人物角色是协助产品经理制定决策的另一项工具，把目标用户按特征分类，逐一分析、理解其情感和行为，以此作为决策的依据。作为产品管理的工具，人物角色的用途如下：<br>人物角色可以用来筛选重要的产品功能。假设目标用户是Mary，那么就该围绕Mary的期望确定用例；如果某项功能只是针对Lily的，就改被淘汰。面面俱到的产品往往一无是处，使用任务角色可以避免犯这种错误。<br>产品团队常常把自己的需求当成用户的需求，使用人物角色可以避免这种错误。<br>许多产品的用户类型不止一种，使用人物角色有助于对用户类型的优先级进行排序，识别需要重点考虑用户体验的地方。</p>
+<h3 id="8-使用原型"><a href="#8-使用原型" class="headerlink" title="8. 使用原型"></a>8. 使用原型</h3><p>使用高保真原型是探索（定义）产品的关键步骤。目前几乎所有产品经理都在使用原型，其优势就不在这里赘述了。在这里想额外聊一聊基本产品的概念，作者号召产品团队不再视图定义最终产品，转而定义只满足基本要求（价值、可用性、可行性）的产品。一旦基本产品确定，就不可能再削减任何功能。只设计基本功能的产品可以把复杂度降到最低，把开发时间减到最少，因而是非常重要的。</p>
+<h3 id="9-用户参与原型测试"><a href="#9-用户参与原型测试" class="headerlink" title="9. 用户参与原型测试"></a>9. 用户参与原型测试</h3><p>邀请用户进行测试，目前工作中几乎不涉及这一点，不细说。</p>
+<h3 id="10-根据数据改变产品"><a href="#10-根据数据改变产品" class="headerlink" title="10. 根据数据改变产品"></a>10. 根据数据改变产品</h3><p>成功的产品经理，懂得利用数据来改进产品，而不是根据客户要求一味增加新功能，而是根据产品的实际应用情况，逐步完善产品。很多情况下，添加新功能不仅不会为产品增色，反而会让产品性能变得更糟糕。作者建议产品迭代的第一步是明确目标，举个例子，有多少用户访问申请的起始页面，接下来的每个页面各有多少人放弃了注册，有多少用户拒绝提供私人信息，有多少用户完成了整个申请流程。假设目前仅7%的人完成了申请，如果下期产品迭代的目标就是将这个数字提升到15%，至于应该如何改进取决于能在多大程度上提升各项指标。产品经理应该适合关注这些指标，与交互设计师、用户研究人员、主程序员密切合作，分析改善产品的可能性。</p>
+<p><a href="https://zhangxiaoxiaomin.github.io/2018/01/17/%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E4%B8%8B%E7%9A%84%E4%BA%A7%E5%93%81%E5%86%B3%E7%AD%96/" target="_blank" rel="external">《数据驱动产品决策》</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/产品/" rel="tag"># 产品</a>
+          
+            <a href="/tags/产品管理/" rel="tag"># 产品管理</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/09/44-如何打造用户喜爱的产品/" rel="next" title="月半读书03-《如何打造用户喜爱的产品》">
+                <i class="fa fa-chevron-left"></i> 月半读书03-《如何打造用户喜爱的产品》
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/05/45-月半读书04-《每个人的战争》/" rel="prev" title="月半读书04-《每个人的战争：抵御癌症的有效生活方式》">
+                月半读书04-《每个人的战争：抵御癌症的有效生活方式》 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/touxiang.png"
+               alt="zhangxiaoxiaomin" />
+          <p class="site-author-name" itemprop="name">zhangxiaoxiaomin</p>
+           
+              <p class="site-description motion-element" itemprop="description">Stay Hungray,Stay Foolish.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">49</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">57</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-产品管理的职责；"><span class="nav-number">1.</span> <span class="nav-text">1. 产品管理的职责；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-机会评估"><span class="nav-number">2.</span> <span class="nav-text">2. 机会评估</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-探索（定义产品）"><span class="nav-number">3.</span> <span class="nav-text">3. 探索（定义产品）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-用户体验"><span class="nav-number">4.</span> <span class="nav-text">4. 用户体验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-特约用户"><span class="nav-number">5.</span> <span class="nav-text">5. 特约用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-产品原则"><span class="nav-number">6.</span> <span class="nav-text">6. 产品原则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-人物角色"><span class="nav-number">7.</span> <span class="nav-text">7. 人物角色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-使用原型"><span class="nav-number">8.</span> <span class="nav-text">8. 使用原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-用户参与原型测试"><span class="nav-number">9.</span> <span class="nav-text">9. 用户参与原型测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-根据数据改变产品"><span class="nav-number">10.</span> <span class="nav-text">10. 根据数据改变产品</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhangxiaoxiaomin</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
