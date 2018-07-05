@@ -93,23 +93,23 @@
 
 
 
-<meta name="description" content="什么是推荐系统如果想买一包花生米，你有多少种办法？假设附近有一个24小时便利店，你可以走进店里，看看所有的货架，转一圈找到花生米，然后比较几个牌子的口碑或者价格找到自己喜欢的牌子，掏钱付款。如果家附近有一家沃尔玛，你可以走进店里，按照分类指示牌走到食品所在的楼层，接着按照指示牌找到卖干果的货架，然后在货架上仔细寻找你需要的花生米，找到后付款。如果你很懒，不想出门，可以打开当当或者淘宝，在一个叫做搜">
+<meta name="description" content="最近刚接手一个涉及个性化推荐的产品，由于在此之前我对个性化推荐完全不了解，因此上网搜寻入门书籍。各路大神纷纷推荐《推荐系统实践》这本书，读完之后顿感收获颇多。将书中精华整理成系列文章，本文是第一篇。">
 <meta name="keywords" content="个性化推荐,推荐,推荐系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初识推荐系统">
 <meta property="og:url" content="http://yoursite.com/2018/07/05/47-初始推荐系统/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="什么是推荐系统如果想买一包花生米，你有多少种办法？假设附近有一个24小时便利店，你可以走进店里，看看所有的货架，转一圈找到花生米，然后比较几个牌子的口碑或者价格找到自己喜欢的牌子，掏钱付款。如果家附近有一家沃尔玛，你可以走进店里，按照分类指示牌走到食品所在的楼层，接着按照指示牌找到卖干果的货架，然后在货架上仔细寻找你需要的花生米，找到后付款。如果你很懒，不想出门，可以打开当当或者淘宝，在一个叫做搜">
+<meta property="og:description" content="最近刚接手一个涉及个性化推荐的产品，由于在此之前我对个性化推荐完全不了解，因此上网搜寻入门书籍。各路大神纷纷推荐《推荐系统实践》这本书，读完之后顿感收获颇多。将书中精华整理成系列文章，本文是第一篇。">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-3.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-4.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-5.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-6.png">
-<meta property="og:updated_time" content="2018-07-05T04:54:39.149Z">
+<meta property="og:updated_time" content="2018-07-05T05:02:55.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识推荐系统">
-<meta name="twitter:description" content="什么是推荐系统如果想买一包花生米，你有多少种办法？假设附近有一个24小时便利店，你可以走进店里，看看所有的货架，转一圈找到花生米，然后比较几个牌子的口碑或者价格找到自己喜欢的牌子，掏钱付款。如果家附近有一家沃尔玛，你可以走进店里，按照分类指示牌走到食品所在的楼层，接着按照指示牌找到卖干果的货架，然后在货架上仔细寻找你需要的花生米，找到后付款。如果你很懒，不想出门，可以打开当当或者淘宝，在一个叫做搜">
+<meta name="twitter:description" content="最近刚接手一个涉及个性化推荐的产品，由于在此之前我对个性化推荐完全不了解，因此上网搜寻入门书籍。各路大神纷纷推荐《推荐系统实践》这本书，读完之后顿感收获颇多。将书中精华整理成系列文章，本文是第一篇。">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-1.png">
 
 
@@ -369,7 +369,8 @@
       
 
       
-        <h1 id="什么是推荐系统"><a href="#什么是推荐系统" class="headerlink" title="什么是推荐系统"></a>什么是推荐系统</h1><p>如果想买一包花生米，你有多少种办法？假设附近有一个24小时便利店，你可以走进店里，看看所有的货架，转一圈找到花生米，然后比较几个牌子的口碑或者价格找到自己喜欢的牌子，掏钱付款。如果家附近有一家沃尔玛，你可以走进店里，按照分类指示牌走到食品所在的楼层，接着按照指示牌找到卖干果的货架，然后在货架上仔细寻找你需要的花生米，找到后付款。如果你很懒，不想出门，可以打开当当或者淘宝，在一个叫做搜索框的东西里输入花生米3个字，然后你会看到一堆花生米，找到喜欢的牌子，付费，然后等待送货上门。上面这几个例子描述了用户在有明确需求的情况下，面对信息过载所采用的措施。在24小时便利店，因为店面很小，用户可以凭自己的经验浏览所有货架找到自己需要的东西。在沃尔玛，商品已经被放在无数的货上，此时用户就需要借用分类信息找到自己需要的商品。而在淘宝或者当当，由于商品数目巨大，用户只能通过搜索引擎找到自己需要的商品。</p>
+        <p>最近刚接手一个涉及个性化推荐的产品，由于在此之前我对个性化推荐完全不了解，因此上网搜寻入门书籍。各路大神纷纷推荐《推荐系统实践》这本书，读完之后顿感收获颇多。将书中精华整理成系列文章，本文是第一篇。<br><a id="more"></a></p>
+<h1 id="什么是推荐系统"><a href="#什么是推荐系统" class="headerlink" title="什么是推荐系统"></a>什么是推荐系统</h1><p>如果想买一包花生米，你有多少种办法？假设附近有一个24小时便利店，你可以走进店里，看看所有的货架，转一圈找到花生米，然后比较几个牌子的口碑或者价格找到自己喜欢的牌子，掏钱付款。如果家附近有一家沃尔玛，你可以走进店里，按照分类指示牌走到食品所在的楼层，接着按照指示牌找到卖干果的货架，然后在货架上仔细寻找你需要的花生米，找到后付款。如果你很懒，不想出门，可以打开当当或者淘宝，在一个叫做搜索框的东西里输入花生米3个字，然后你会看到一堆花生米，找到喜欢的牌子，付费，然后等待送货上门。上面这几个例子描述了用户在有明确需求的情况下，面对信息过载所采用的措施。在24小时便利店，因为店面很小，用户可以凭自己的经验浏览所有货架找到自己需要的东西。在沃尔玛，商品已经被放在无数的货上，此时用户就需要借用分类信息找到自己需要的商品。而在淘宝或者当当，由于商品数目巨大，用户只能通过搜索引擎找到自己需要的商品。</p>
 <p>但是，如果用户没有明确的需求呢？比如你今天很无聊，想下载一部电影看看。但当你打开某个下载网站，面对100年来发行的数不胜数的电影，你会手足无措，不知道该看哪一部。此时， <strong>你遇到了信息过载的问题</strong> ，需要一个人或者工具来帮助你做筛选，给出一些建议供你选择。如果这时候有个喜欢看电影的朋友在身边，你可能会请他推荐几部电影。不过，总不能时时刻刻都去麻烦“专家”给你推荐，你需要的是一个自动化的工具，它可以分析你的历史兴趣，从庞大的电影库中找到几部符合你兴趣的电影供你选择。这个工具就是<strong>个性化推荐系统</strong>。</p>
 <p>随着信息技术和互联网的发展，人们逐渐从信息匮乏的时代走入了信息过载（information overload）的时代。在这个时代，无论是信息消费者还是信息生产者都遇到了很大的挑战：作为信息消费者，如何从大量信息中找到自己感兴趣的信息是一件非常困难的事情；作为信息生产者，如何让自己生产的信息脱颖而出，受到广大用户的关注，也是一件非常困难的事情。推荐系统就是解决这一矛盾的重要工具。<strong>推荐系统的任务就是联系用户和信息</strong>，一方面帮助用户发现对自己有价值的信息，另一方面让信息能够展现在对它感兴趣的用户面前，从而实现信息消费者和信息生产者的双赢。</p>
 <p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-1.png" alt=""></p>
