@@ -106,7 +106,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-4.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-5.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/47-6.png">
-<meta property="og:updated_time" content="2018-07-05T05:02:55.528Z">
+<meta property="og:updated_time" content="2018-07-05T05:07:02.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识推荐系统">
 <meta name="twitter:description" content="最近刚接手一个涉及个性化推荐的产品，由于在此之前我对个性化推荐完全不了解，因此上网搜寻入门书籍。各路大神纷纷推荐《推荐系统实践》这本书，读完之后顿感收获颇多。将书中精华整理成系列文章，本文是第一篇。">
@@ -414,17 +414,22 @@
 </ul>
 <h2 id="排名模块"><a href="#排名模块" class="headerlink" title="排名模块"></a>排名模块</h2><p>经过过滤后的推荐结果直接展示给用户一般也没有问题，但如果对它们进行一些排名，则可以更好地提升用户满意度，一般排名模块需要包括很多不同的子模块，下面将对不同的模块分别加以介绍。</p>
 <ol>
-<li>新颖性排名<br>新颖性排名模块的目的是给用户尽量推荐他们不知道的、长尾中的物品。</li>
-<li>时间多样性<br>在用户有新行为时实时调整推荐结果以满足用户最近的需求；<br>要在用户没有新的行为时，也要保证推荐结果每天都有变化。</li>
+<li>新颖性排名</li>
 </ol>
+<p>新颖性排名模块的目的是给用户尽量推荐他们不知道的、长尾中的物品。</p>
+<ol>
+<li>时间多样性</li>
+</ol>
+<p>在用户有新行为时实时调整推荐结果以满足用户最近的需求；<br>要在用户没有新的行为时，也要保证推荐结果每天都有变化。</p>
 <ul>
 <li>记录用户每次登陆推荐系统看到的推荐结果。</li>
 <li>将这些结果发回日志系统。这种数据不需要实时存储，只要能保证小于一天的延时就足够了。</li>
 <li>在用户登录时拿到用户昨天及之前看过的推荐结果列表，从当前推荐结果中将用户已经看到的推荐结果降权。</li>
 </ul>
 <ol>
-<li>用户反馈<br>排名模块最重要的部分就是用户反馈模块。用户反馈模块主要通过分析用户之前和推荐结果<br>的交互日志，预测用户会对什么样的推荐结果比较感兴趣。如果推荐系统的目标是提高用户对推荐结果的点击率，那么可以利用点击模型（click model）预测用户是否会点击推荐结果。</li>
+<li>用户反馈</li>
 </ol>
+<p>排名模块最重要的部分就是用户反馈模块。用户反馈模块主要通过分析用户之前和推荐结果<br>的交互日志，预测用户会对什么样的推荐结果比较感兴趣。如果推荐系统的目标是提高用户对推荐结果的点击率，那么可以利用点击模型（click model）预测用户是否会点击推荐结果。</p>
 
       
     </div>
