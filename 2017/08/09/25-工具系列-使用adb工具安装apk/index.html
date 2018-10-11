@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="本文记录如何使用adb工具安装软件到android盒子。">
 <meta property="og:image" content="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E5%AE%89%E8%A3%85apk.png">
-<meta property="og:updated_time" content="2018-10-11T03:00:19.591Z">
+<meta property="og:updated_time" content="2018-10-11T03:04:12.700Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工具系列01-使用adb工具安装apk以及相关操作">
 <meta name="twitter:description" content="本文记录如何使用adb工具安装软件到android盒子。">
@@ -365,12 +365,12 @@
 
       
         <p>本文记录如何使用adb工具安装软件到android盒子。<br><a id="more"></a></p>
-<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h3 id="安装adb"><a href="#安装adb" class="headerlink" title="安装adb"></a>安装adb</h3><p>下载并安装adb工具。下载地址：<a href="http://dl.pconline.com.cn/download/359035.html" target="_blank" rel="external">http://dl.pconline.com.cn/download/359035.html</a><br>安装完成后，打开cmd窗口，输入命令adb，可查看adb工具的详细信息，否则安装失败。</p>
-<h3 id="通过IP连接设备"><a href="#通过IP连接设备" class="headerlink" title="通过IP连接设备"></a>通过IP连接设备</h3><ol>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="安装adb"><a href="#安装adb" class="headerlink" title="安装adb"></a>安装adb</h2><p>下载并安装adb工具。下载地址：<a href="http://dl.pconline.com.cn/download/359035.html" target="_blank" rel="external">http://dl.pconline.com.cn/download/359035.html</a><br>安装完成后，打开cmd窗口，输入命令adb，可查看adb工具的详细信息，否则安装失败。</p>
+<h2 id="通过IP连接设备"><a href="#通过IP连接设备" class="headerlink" title="通过IP连接设备"></a>通过IP连接设备</h2><ol>
 <li>查看盒子的IP地址，改为自动获取IP地址。</li>
 <li>adb connect X.X.X.X                    盒子ip<br>adb remount                            意思是将设备改为可读可写;</li>
 </ol>
-<h1 id="安装apk"><a href="#安装apk" class="headerlink" title="安装apk"></a>安装apk</h1><h3 id="方式一：install命令安装"><a href="#方式一：install命令安装" class="headerlink" title="方式一：install命令安装"></a>方式一：install命令安装</h3><p>adb install  C:\XX.apk      安装</p>
+<h1 id="安装apk"><a href="#安装apk" class="headerlink" title="安装apk"></a>安装apk</h1><h2 id="方式一：install命令安装"><a href="#方式一：install命令安装" class="headerlink" title="方式一：install命令安装"></a>方式一：install命令安装</h2><p>adb install  C:\XX.apk      安装</p>
 <blockquote>
 <p>异常：daemon not running. starting it now on port 5037 *<br>解决方案：<a href="http://blog.csdn.net/xishuluoye/article/details/17880663" target="_blank" rel="external">http://blog.csdn.net/xishuluoye/article/details/17880663</a></p>
 </blockquote>
@@ -379,11 +379,9 @@
 <li>adb install -r C:\XX.apk /system/app     （覆盖安装）</li>
 <li>adb uninstall 包名  （卸载后，再次安装）</li>
 </ol>
-<h3 id="方式二：push命令安装"><a href="#方式二：push命令安装" class="headerlink" title="方式二：push命令安装"></a>方式二：push命令安装</h3><p>将安装文件放到盒子的指定路径下即可完成安装。<br>依次输入以下命令：<br>1.adb shell<br>2.ls /system/app</p>
+<h2 id="方式二：push命令安装"><a href="#方式二：push命令安装" class="headerlink" title="方式二：push命令安装"></a>方式二：push命令安装</h2><p>将安装文件放到盒子的指定路径下即可完成安装。<br>依次输入以下命令：<br>1.adb shell<br>2.ls /system/app</p>
 <p><img src="https://raw.githubusercontent.com/zhangxiaoxiaomin/img/master/%E5%AE%89%E8%A3%85apk.png" alt="安装apk"></p>
-<p>3.mkdir /system/app/应用名称                //创建文件夹如果创建失败，可以先输入命令行 mount -o remount /system，再创建文件夹</p>
-<p>4.adb push C:\XX.apk /system/app/XX/ 将要安装的应用push到盒子指定目录下<br>5.重启盒子</p>
-<p>现在，可在我的应用里找到新安装的应用。（/(ㄒoㄒ)/~~</p>
+<p>3.mkdir /system/app/应用名称                //创建文件夹如果创建失败，可以先输入命令行 mount -o remount /system，再创建文件夹<br>4.adb push C:\XX.apk /system/app/XX/ 将要安装的应用push到盒子指定目录下<br>5.重启盒子<br>现在，可在我的应用里找到新安装的应用。（/(ㄒoㄒ)/~~</p>
 <h1 id="抓android盒子的log"><a href="#抓android盒子的log" class="headerlink" title="抓android盒子的log"></a>抓android盒子的log</h1><p>adb logcat -v time -&gt;E:\a.log                                    //抓log</p>
 <h1 id="通过命令启动盒子里的应用"><a href="#通过命令启动盒子里的应用" class="headerlink" title="通过命令启动盒子里的应用"></a>通过命令启动盒子里的应用</h1><p>adb shell<br>am start -n 包名/类名</p>
 <h1 id="查看盒子目录的命令"><a href="#查看盒子目录的命令" class="headerlink" title="查看盒子目录的命令"></a>查看盒子目录的命令</h1><p>adb shell<br>cd 文件路径<br>ls</p>
@@ -579,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前期准备"><span class="nav-number">1.</span> <span class="nav-text">前期准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装adb"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装adb</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过IP连接设备"><span class="nav-number">1.0.2.</span> <span class="nav-text">通过IP连接设备</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装apk"><span class="nav-number">2.</span> <span class="nav-text">安装apk</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方式一：install命令安装"><span class="nav-number">2.0.1.</span> <span class="nav-text">方式一：install命令安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式二：push命令安装"><span class="nav-number">2.0.2.</span> <span class="nav-text">方式二：push命令安装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#抓android盒子的log"><span class="nav-number">3.</span> <span class="nav-text">抓android盒子的log</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过命令启动盒子里的应用"><span class="nav-number">4.</span> <span class="nav-text">通过命令启动盒子里的应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看盒子目录的命令"><span class="nav-number">5.</span> <span class="nav-text">查看盒子目录的命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他操作命令"><span class="nav-number">6.</span> <span class="nav-text">其他操作命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前期准备"><span class="nav-number">1.</span> <span class="nav-text">前期准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装adb"><span class="nav-number">1.1.</span> <span class="nav-text">安装adb</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过IP连接设备"><span class="nav-number">1.2.</span> <span class="nav-text">通过IP连接设备</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装apk"><span class="nav-number">2.</span> <span class="nav-text">安装apk</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方式一：install命令安装"><span class="nav-number">2.1.</span> <span class="nav-text">方式一：install命令安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方式二：push命令安装"><span class="nav-number">2.2.</span> <span class="nav-text">方式二：push命令安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#抓android盒子的log"><span class="nav-number">3.</span> <span class="nav-text">抓android盒子的log</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过命令启动盒子里的应用"><span class="nav-number">4.</span> <span class="nav-text">通过命令启动盒子里的应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看盒子目录的命令"><span class="nav-number">5.</span> <span class="nav-text">查看盒子目录的命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他操作命令"><span class="nav-number">6.</span> <span class="nav-text">其他操作命令</span></a></li></ol></div>
             
 
           </div>
