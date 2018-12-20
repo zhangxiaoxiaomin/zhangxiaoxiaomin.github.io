@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="准备工作 下载SecureCRT；安装SecureCRT。  连接盒子 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码； 输入用户名（root）、密码（空），按回车 连接成功，按Ctrl+C截断输出。">
+<meta name="description" content="准备工作 下载SecureCRT；安装SecureCRT。  连接盒子 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码； 输入用户名（root）、密码（空），按回车 连接成功，按Ctrl+C截断输出。  kill 进程（讯飞进程） 输入 ps 后查看讯飞进程代号   kill -9 进程代号">
 <meta name="keywords" content="SecureCRT,抓盒子log">
 <meta property="og:type" content="article">
 <meta property="og:title" content="工具系列02-使用SecureCRT抓盒子log">
 <meta property="og:url" content="http://yoursite.com/2017/09/06/26-工具系列-使用SecureCRT抓盒子log/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="准备工作 下载SecureCRT；安装SecureCRT。  连接盒子 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码； 输入用户名（root）、密码（空），按回车 连接成功，按Ctrl+C截断输出。">
-<meta property="og:updated_time" content="2018-07-18T07:26:53.414Z">
+<meta property="og:description" content="准备工作 下载SecureCRT；安装SecureCRT。  连接盒子 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码； 输入用户名（root）、密码（空），按回车 连接成功，按Ctrl+C截断输出。  kill 进程（讯飞进程） 输入 ps 后查看讯飞进程代号   kill -9 进程代号">
+<meta property="og:updated_time" content="2018-12-20T13:33:06.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工具系列02-使用SecureCRT抓盒子log">
-<meta name="twitter:description" content="准备工作 下载SecureCRT；安装SecureCRT。  连接盒子 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码； 输入用户名（root）、密码（空），按回车 连接成功，按Ctrl+C截断输出。">
+<meta name="twitter:description" content="准备工作 下载SecureCRT；安装SecureCRT。  连接盒子 打开SecureCRT-&amp;gt;快速连接-&amp;gt;协议选talent-&amp;gt;输入盒子的IP-&amp;gt;确定； 连接成功后页面中会提示输入用户名、密码； 输入用户名（root）、密码（空），按回车 连接成功，按Ctrl+C截断输出。  kill 进程（讯飞进程） 输入 ps 后查看讯飞进程代号   kill -9 进程代号">
 
 
 
@@ -371,8 +371,10 @@
 <li>输入用户名（root）、密码（空），按回车</li>
 <li>连接成功，按Ctrl+C截断输出。</li>
 </ol>
-<a id="more"></a>
-<h2 id="修改配置文件，开启打印开关"><a href="#修改配置文件，开启打印开关" class="headerlink" title="修改配置文件，开启打印开关"></a>修改配置文件，开启打印开关</h2><ol>
+<h2 id="kill-进程（讯飞进程）"><a href="#kill-进程（讯飞进程）" class="headerlink" title="kill 进程（讯飞进程）"></a>kill 进程（讯飞进程）</h2><ol>
+<li>输入 ps 后查看讯飞进程代号  </li>
+<li>kill -9 进程代号<a id="more"></a>
+<h2 id="修改配置文件，开启打印开关"><a href="#修改配置文件，开启打印开关" class="headerlink" title="修改配置文件，开启打印开关"></a>修改配置文件，开启打印开关</h2></li>
 <li>vi config.ini (按a后可对配置文件进行修改) 打开config.ini文件</li>
 <li>将 debug-level=0 一行的值改为 debug-level=1（页面打印）</li>
 <li>依次按键Esc ：wq 后按enter    保存修改</li>
@@ -518,7 +520,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">49</span>
+                <span class="site-state-item-count">50</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -575,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连接盒子"><span class="nav-number">2.</span> <span class="nav-text">连接盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置文件，开启打印开关"><span class="nav-number">3.</span> <span class="nav-text">修改配置文件，开启打印开关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始打印"><span class="nav-number">4.</span> <span class="nav-text">开始打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#还原配置文件，关闭打印开关"><span class="nav-number">5.</span> <span class="nav-text">还原配置文件，关闭打印开关</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连接盒子"><span class="nav-number">2.</span> <span class="nav-text">连接盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kill-进程（讯飞进程）"><span class="nav-number">3.</span> <span class="nav-text">kill 进程（讯飞进程）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置文件，开启打印开关"><span class="nav-number">4.</span> <span class="nav-text">修改配置文件，开启打印开关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始打印"><span class="nav-number">5.</span> <span class="nav-text">开始打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#还原配置文件，关闭打印开关"><span class="nav-number">6.</span> <span class="nav-text">还原配置文件，关闭打印开关</span></a></li></ol></div>
             
 
           </div>
